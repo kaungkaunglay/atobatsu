@@ -1,31 +1,353 @@
 
+<!DOCTYPE html>
 <html>
+<head>
+    <title>atobatsu-server</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .explorer-container {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            height: calc(100% - 2px);
+            display: flex;
+            flex-direction: column;
+        }
+        .header {
+            background: #f0f0f0;
+            padding: 10px 15px;
+            border-bottom: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+        .header h2 {
+            margin: 0;
+            color: #333;
+            font-size: 16px;
+        }
+        .tree-view {
+            padding: 10px;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        .folder,
+        .file {
+            padding: 4px 8px;
+            margin: 2px 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .folder:hover,
+        .file:hover {
+            background-color: #e8e8e8;
+        }
+        .folder-content {
+            margin-left: 20px;
+            border-left: 1px dotted #ccc;
+            padding-left: 10px;
+            display: none;
+        }
+        .folder-content.open {
+            display: block;
+        }
+        .icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .folder-icon {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23FCD474" d="M1 3v10h14V4H7L6 3z"/></svg>') no-repeat;
+        }
+        .file-icon {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23A0A0A0" d="M3 1v14h10V5L9 1z"/><path fill="%23FFFFFF" d="M9 1v4h4z"/></svg>') no-repeat;
+        }
+        .arrow {
+            width: 16px;
+            height: 16px;
+            margin-right: 4px;
+            display: inline-block;
+            transition: transform 0.2s;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="%23666" d="M6 4l4 4-4 4z"/></svg>') no-repeat center;
+        }
+        .arrow.open {
+            transform: rotate(90deg);
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0066cc;
+        }
+        .folder-label {
+            font-weight: 500;
+        }
+    </style>
+</head>
 <body>
-<h2>atobatsu-server</h2>
-<p>
-    <li><a href="AccountOrder\account_order.html">AccountOrder\account_order.html</a></li>
-    <li><a href="Contribute1\contribute1.html">Contribute1\contribute1.html</a></li>
-    <li><a href="Contribute2\contribute2.html">Contribute2\contribute2.html</a></li>
-    <li><a href="Contri_Login\contri_login.html">Contri_Login\contri_login.html</a></li>
-    <li><a href="Contri_System\contri_system.html">Contri_System\contri_system.html</a></li>
-    <li><a href="disp_history\disp_history.html">disp_history\disp_history.html</a></li>
-    <li><a href="favourite\favourite.html">favourite\favourite.html</a></li>
-    <li><a href="User_Contact\user_contact.html">User_Contact\user_contact.html</a></li>
-    <li><a href="User_History\user_history.html">User_History\user_history.html</a></li>
-    <li><a href="User_Order_BBS\user_order_bbs.html">User_Order_BBS\user_order_bbs.html</a></li>
-    <li><a href="User_Order_Top\user_order_top-after.html">User_Order_Top\user_order_top-after.html</a></li>
-    <li><a href="User_Order_Top\user_order_top-before.html">User_Order_Top\user_order_top-before.html</a></li>
-    <li><a href="User_Regist\user_regist.html">User_Regist\user_regist.html</a></li>
-    <li><a href="User_Regist\user_regist_seko.html">User_Regist\user_regist_seko.html</a></li>
-    <li><a href="user_regist_convenience\user_regist_convenience.html">user_regist_convenience\user_regist_convenience.html</a></li>
-    <li><a href="User_Regist_Post\user_regist_post.html">User_Regist_Post\user_regist_post.html</a></li>
-    <li><a href="user_regist_yamato\user_regist_yamato.html">user_regist_yamato\user_regist_yamato.html</a></li>
-    <li><a href="ログイン\User_History\User_History\user_history.html">ログイン\User_History\User_History\user_history.html</a></li>
-    <li><a href="ログイン_修正\login.html">ログイン_修正\login.html</a></li>
-    <li><a href="ログイン_修正\user_login.html">ログイン_修正\user_login.html</a></li>
-    <li><a href="ログイン_修正\User_Contact\User_Contact\user_contact.html">ログイン_修正\User_Contact\User_Contact\user_contact.html</a></li>
-    <li><a href="ログイン_修正\User_Order_Top\user_order_top.html">ログイン_修正\User_Order_Top\user_order_top.html</a></li>
-    <li><a href="新規会員登録\user_regist.html">新規会員登録\user_regist.html</a></li>
-</p>
+    <div class="explorer-container">
+        <div class="header">
+            <h2>atobatsu-server</h2>
+        </div>
+        <div class="tree-view">
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">AccountOrder</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="AccountOrder\account_order.html">account_order.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">Contribute1</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="Contribute1\contribute1.html">contribute1.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">Contribute2</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="Contribute2\contribute2.html">contribute2.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">Contri_Login</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="Contri_Login\contri_login.html">contri_login.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">Contri_System</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="Contri_System\contri_system.html">contri_system.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">disp_history</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="disp_history\disp_history.html">disp_history.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">favourite</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="favourite\favourite.html">favourite.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">User_Contact</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_Contact\user_contact.html">user_contact.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">User_History</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_History\user_history.html">user_history.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">User_Order_BBS</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_Order_BBS\user_order_bbs.html">user_order_bbs.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">User_Order_Top</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_Order_Top\user_order_top-after.html">user_order_top-after.html</a>
+                        </div>
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_Order_Top\user_order_top-before.html">user_order_top-before.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">User_Regist</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_Regist\user_regist.html">user_regist.html</a>
+                        </div>
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_Regist\user_regist_seko.html">user_regist_seko.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">user_regist_convenience</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="user_regist_convenience\user_regist_convenience.html">user_regist_convenience.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">User_Regist_Post</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="User_Regist_Post\user_regist_post.html">user_regist_post.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">user_regist_yamato</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="user_regist_yamato\user_regist_yamato.html">user_regist_yamato.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">ログイン\User_History\User_History</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="ログイン\User_History\User_History\user_history.html">user_history.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">ログイン_修正</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="ログイン_修正\login.html">login.html</a>
+                        </div>
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="ログイン_修正\user_login.html">user_login.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">ログイン_修正\User_Contact\User_Contact</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="ログイン_修正\User_Contact\User_Contact\user_contact.html">user_contact.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">ログイン_修正\User_Order_Top</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="ログイン_修正\User_Order_Top\user_order_top.html">user_order_top.html</a>
+                        </div>
+                </div>
+                <div class="folder">
+                    <span class="arrow"></span>
+                    <span class="icon folder-icon"></span>
+                    <span class="folder-label">新規会員登録</span>
+                </div>
+                <div class="folder-content">
+                        <div class="file">
+                            <span class="icon file-icon"></span>
+                            <a href="新規会員登録\user_regist.html">user_regist.html</a>
+                        </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const folders = document.querySelectorAll('.folder');
+            folders.forEach(folder => {
+                folder.addEventListener('click', function (e) {
+                    const arrow = this.querySelector('.arrow');
+                    const content = this.nextElementSibling;
+                    arrow.classList.toggle('open');
+                    content.classList.toggle('open');
+                    e.stopPropagation();
+                });
+            });
+        });
+    </script>
 </body>
 </html>
