@@ -1,0 +1,733 @@
+
+/*-----------------------------------------------------------------------------
+　全体の枠
+-----------------------------------------------------------------------------*/
+#top-upper {width: 750px; display:-webkit-box; display:-ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify;justify-content: space-between;}
+
+#newitem-container {width: 440px;margin: 0 10px 0 0;}
+.banner-container {width: 300px;margin: 10px 0 0;}
+#news-container {width: 440px;margin: 0 10px 0 0;}
+#twitter-container {width: 300px;margin: 0 0 0;}
+
+
+/*-----------------------------------------------------------------------------
+　UPPER
+-----------------------------------------------------------------------------*/
+
+#top-upper-left{
+	width:534px;height:199px;
+	padding: 0px;
+	border: 2px solid #eee;
+	outline: 1px solid #ccc;
+}
+
+
+/*-----------------------------------------------------------------------------
+　LEFT
+-----------------------------------------------------------------------------*/
+
+/*-----新商品----- */
+
+.txt-newup {
+	font-size:16px;
+	font-weight:bold;
+	color:#F00;
+	margin-right:10px;
+	display:inline-block;
+	margin-bottom:5px;
+}
+
+.newitem {width: 100%; display: flex; margin-bottom:10px; position: relative; padding-bottom: 4px; justify-content:space-between; align-items: flex-end;}
+.newitem::after {position: absolute;left: 0;content: '';width: 100%;height: 4px;box-sizing: border-box;}
+.newitem::after {bottom: 0;border-top: 2px solid #fee789;border-bottom: 1px solid #fee789;}
+.newitem dt{flex: 0 1 137px;}
+.newitem dd{display: inline-block; flex: 0 1 100%; text-align: end;}
+.newitem dd img{margin-bottom: 5px;}
+
+.newitem-area{display:-webkit-box; display:-ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify;justify-content: space-between;}
+
+
+.osusumeItem {
+	margin-top:-9px;
+	width: 300px;
+	height: 31px;
+	display: block;
+	background: url(images/top/newitem.jpg) no-repeat left top;
+	padding-bottom:4px;float:left;margin-bottom:10px;
+}
+
+.inc_newsBody{
+	overflow:scroll;
+	overflow-x:hidden;	
+	height:225px;
+}
+
+.box-newitem {
+    width: 215px;
+    margin-bottom:5px;
+}
+.box-newitem h4{margin:10px 0;}
+a.itemtitle {
+	color: #930;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: -0.02em;
+}
+
+/*Safariだけに適用されるCSSハック*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  ::i-block-chrome, a.itemtitle {
+	letter-spacing: -0.083em;
+  }
+}
+
+a:hover.itemtitle {
+	color: #F30;
+	text-decoration: underline;
+}
+
+.img-nitem {
+	border: 1px solid #ccc;
+	padding: 5px;
+	width:70px;
+}
+
+.txt-nitem {
+	line-height: 140%;
+	color: #666;
+}
+
+.tit-hotitem a {
+	line-height: 140%;
+	margin-bottom:10px;
+	text-decoration:none;
+}
+
+
+.tit-hotitem a:hover {
+	text-decoration:underline;
+}
+
+
+/*-----新着情報----- */
+
+#news{}
+#news dt{}
+#news dd{}
+
+
+.txt-news li {
+	font-size: 12px;
+	line-height: 140%;
+	color: #666;
+	text-decoration: none;
+	background: url(../content/images/top/smenu_dot.gif) no-repeat left 2px;
+	padding-left: 15px;
+	margin: 0 0 14px;
+	position: relative;
+}
+.txt-news li:after {
+    border-bottom: 1px dashed #ccc;
+    position:absolute;
+    content: " ";
+    display: block;
+    bottom: -7px;
+    left:0;
+    width: 100%;
+}
+.txt-news li:last-child:after {
+    border-bottom:none;
+}
+
+.txt-news a {color: #009;text-decoration: none;}
+.txt-news a:hover {color: #F00;text-decoration: underline;}
+.txt-news2 {
+	font-size: 12px;
+	line-height: 140%;
+	color: #666;
+	text-decoration: none;
+}
+
+
+.txt-news2 a {
+	color: #009;
+	text-decoration: none;
+}
+
+.txt-news2 a:hover {
+	color: #F00;
+	text-decoration: underline;
+}
+.new-ico-news {line-height: 10px;}
+
+/*-----定番商品----- */
+
+/*-----------------------------------------------------------------------------
+　RIGHT
+-----------------------------------------------------------------------------*/
+
+.olangeBigButton{display:-webkit-box; display:-ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify;justify-content: space-between;margin-top: 10px;}
+
+/*-----------------------------------------------------------------------------
+　バナーレイアウト
+-----------------------------------------------------------------------------*/
+#sidebanner{width:290px;}
+#sidebanner li{width:290px;margin-bottom:10px;}
+
+
+
+/*-----------------------------------------------------------------------------
+　昨日の売上ランキング
+-----------------------------------------------------------------------------*/
+
+.rankingTop50Tab{
+    position:relative;
+}
+.rankingTop50Tab .RankingItems{
+    overflow:hidden;
+    margin:0 auto;
+    padding:5px 0 0;
+    width:665px;
+}
+.rankingTop50Tab .RankingItems .row1{
+    width:680px;
+    padding-bottom:8px;
+    margin-bottom:8px;
+    border-bottom:1px solid #c0c0c0;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+}
+.rankingTop50Tab .RankingItems .row2{
+    width:680px;
+    padding-bottom:5px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+}
+
+.rankingTop50Tab .pagerBtn{
+    position:absolute;
+    top:50%;
+    width:23px;
+    height:24px;
+    cursor:pointer;
+}
+
+.rankingTop50Tab .pagerBtn.back{
+    left:10px;
+}
+
+.rankingTop50Tab .pagerBtn.next{
+    right:10px;
+}
+
+.rankingTop50Tab .RankingItems .single{
+    width:65px;
+    padding-right:10px;
+    font-size:10px;
+    line-height:1;
+}
+
+.rankingTop50Tab .RankingItems .single h3{
+    font-size:12px;
+    font-weight:bold;
+    color:red;
+}
+
+.rankingTop50Tab .RankingItems .single .rank50Price{
+    color:red;
+}
+
+.rankingTop50Tab .RankingItems .single strong{
+    font-weight:normal;
+}
+
+.rankingTop50Tab .RankingItems img{
+    width:60px;
+    height:60px;
+	margin-bottom:10px;
+} 
+
+.rankingTop50Tab .tabs{
+	text-align:center;
+	display:block;
+	width:685px;
+	margin:0 auto;
+}
+.rankingTop50Tab .tabs li{
+	display:block;
+	float:left;
+	width:335px;
+	height:28px;
+   background-image:url(../images/top/top06.gif);
+   background-repeat:no-repeat;
+	padding-top:9px;
+}
+.rankingTop50Tab .tabs li.RankingYesterday1{
+    margin-right:15px;
+}
+.rankingTop50Tab .tabs li.current{
+	background-image:url("../images/top/top07.gif");
+}
+.rankingTop50Tab{
+	background-color:#FFFEEF;
+        border-left:2px solid #C40000;
+        border-right:2px solid #C40000;
+        border-bottom:2px solid #C40000;
+}
+.rankingTop50Tab .rankInner_1{
+	margin-top:-10px;
+        background-image:url(../content/images/top/top19.gif);
+        background-repeat:repeat-y;
+        background-position:top;
+}
+.rankingTop50Tab .rankInner_2{
+        padding-top:14px;
+        background-image:url(../content/images/top/top17.gif);
+        background-repeat:no-repeat;
+        background-position:top;
+}
+.rankingTop50Tab .rankInner_3{
+        padding-bottom:10px;
+        background-image:url(../content/images/top/top18.gif);
+        background-repeat:no-repeat;
+        background-position:bottom;
+        position:relative;
+}
+
+
+/*-----------------------------------------------------------------------------
+　
+200907　商品登録数・口コミ総数・追加初めての方へ
+
+-----------------------------------------------------------------------------*/
+#top-upper-right{
+	width:200px;
+	}
+
+#totalarea{
+	width:200px;
+	height:60px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#totalarea-sales{
+	width:97px;
+	height:60px;
+	display:block;
+	margin-right:6px;
+}
+
+#totalarea-kuchikomi{
+	width:97px;
+	height:60px;
+	display:block;
+}
+
+#totalarea-sales dd{
+	width:97px;
+	height: 41px;
+	line-height:100%;
+	padding-top: 10px;
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing:0.02em;
+	color:#333;
+	text-align:center;
+	float:left;
+	background: url("../content/images/top/bg_total_seles.gif") no-repeat left top;
+}
+
+
+#totalarea-kuchikomi dd{
+	width:97px;
+	height: 41px;
+	line-height:100%;
+	padding-top: 10px;
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing:0.02em;
+	color:#333;
+	text-align:center;
+	float:right;
+	background: url("../content/images/top/bg_total_kuchikomi.gif") no-repeat left top;
+}
+
+#biginnerarea{
+	width:200px;
+	height:136px;
+}
+
+#biginnerarea h2{
+	width:200px;
+	height:28px;
+}
+
+#biginnerarea ul{
+	width:200px;
+	height:107px;
+}
+
+#biginnerarea ul li{
+	width:200px;
+	line-height:0px;
+	font-size:0px;
+}
+
+#biginnerarea li a{
+	width:200px;
+	display:block;
+}
+#biginnerarea a:hover img{filter: alpha(opacity=100);-moz-opacity:1.0;opacity:1.0;}
+#biginnerarea li#btn1,#biginnerarea li#btn2,#biginnerarea li#btn3,#biginnerarea li#btn4,#biginnerarea li#btn5{width:200px;height:27px;}
+
+.startContent{
+	margin-left:-2px;
+	margin-top:-2px;
+	margin-bottom:3px;
+}
+.startContent a{
+	display:block;
+}
+.startContent img{
+	margin-bottom:2px;
+}
+
+
+
+/*-----------------------------------------------------------------------------
+　長期休日の案内
+-----------------------------------------------------------------------------*/
+.btn_top_info span {
+	color: #c00000;
+	position: relative;
+	display: block;
+	border-radius: 5px;
+	background: linear-gradient(white,#FFF8D8);
+	text-align: center;
+	border: solid 1px #c00000;
+	font-size: 1rem;
+    padding: 10px;
+    margin: 12px auto 10px;
+	font-weight: bold;
+	width: 94%;
+	box-sizing: border-box;
+	line-height: 140%;
+}
+
+.btn_top_info a span::before {
+	content: url(../images/top/bell-solid.svg);
+	display: inline-block;
+	width: 14px;
+	vertical-align: middle;
+	margin-right: 1%;
+}
+
+.btn_top_info a {
+	text-decoration:none;
+	background: linear-gradient(#FFF8D8,white);
+}
+
+
+/*-----------------------------------------------------------------------------
+左カラムバナー 
+-----------------------------------------------------------------------------*/
+.sub-banner-container a{
+	display:block;
+}
+.sub-banner-container img{
+	margin-bottom:10px;
+}
+#top-upper-photos .panel{
+    width:534px;
+    height:155px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    overflow:hidden;
+    display:none;
+    background:#fff;
+}
+
+
+
+/*-----------------------------------------------------------------------------
+　クチコミ 
+-----------------------------------------------------------------------------*/
+.txt-kuchikomi {
+	color:#666;
+	font-size:12px;
+}
+
+#kuchikomi-bar{}
+#kuchikomi-bar dt{flex: 0 1 185px;}
+#kuchikomi-bar dd{font-size:13px; margin-bottom: 5px;}
+#kuchikomi-bar dd a {
+	color: #900;
+	font-weight: bold;
+	text-decoration: none;
+}
+#kuchikomi-bar dd a:hover {
+	color: #F60;
+	text-decoration: underline;
+}
+
+@use autoprefixer {
+  remove: false;
+  grid: true;
+  browsers: "> 1%, firefox 32";
+};
+
+.box-kuchikomi-item {
+	width:165px;
+	text-align:center;
+    display: -webkit-grid;
+    display: -ms-grid;
+    display: grid;
+    -webkit-grid-columns: 165px;
+    -ms-grid-columns: 165px;
+    grid-template-columns: 165px;
+    -webkit-grid-rows: 130px auto 25px 70px;	
+    -ms-grid-rows: 130px auto 25px 70px;	
+    grid-template-rows: 130px auto 25px 70px;
+}
+
+.name-kuchikomi {
+	font-weight:bold;
+	color:#F00;
+	margin-bottom: 5px;
+}
+
+.kuchikomi-star {
+	color:#F00;
+	text-align:left;
+	font-size:14px;
+	margin-bottom:10px; 
+}
+
+.box-green {
+	color:#FFF;
+	font-size:10px;
+	background-color:#096;
+	padding:5px;
+	border-radius:3px;
+	margin-right:5px;
+}
+
+.txt-kuchikomi {
+	text-align:left;
+}
+
+#box-kuchikomi {
+	width:750px;
+  	display:-webkit-box;
+  	display:-ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	align-items: flex-start;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#kuchikomi-item {
+	width:690px;
+}
+
+.box-kuchikomi-img {
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.box-kuchikomi-info {
+	float:left;
+}
+
+.kuchikomi-item-image {
+	margin-bottom:5px;
+}
+
+#box-kuchikomi .btn-left,
+#box-kuchikomi .btn-right {
+	width:28px;
+	margin-top: 110px;
+}
+
+#box-kuchikomi .pagerBtn {
+	cursor: pointer;
+}
+
+
+/*-----------------------------------------------------------------------------
+　お知らせ
+-----------------------------------------------------------------------------*/
+
+.topAttention {
+	background-color:#FF9;
+	padding:10px;
+	border-radius: 10px;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+	clear:both;
+	font-size:16px;
+	text-align:center;
+}
+
+
+
+/*-----------------------------------------------------------------------------
+　おすすめ商品
+-----------------------------------------------------------------------------*/
+.txt-osusume {
+	color:#666;
+	font-size:12px;
+    text-align:left;
+}
+
+#osusume-bar{}
+#osusume-bar dt{width:185px;float:left;}
+#osusume-bar dd{width:300px;padding-top: 9px;float:right; font-size:13px; text-align:right;}
+#osusume-bar dd a {
+	color: #900;
+	font-weight: bold;
+	text-decoration: none;
+}
+#osusume-bar dd a:hover {
+	color: #F60;
+	text-decoration: underline;
+}
+
+.box-osusume-item {
+	width:165px;
+	text-align:center;
+	float:left;
+}
+
+.name-osusume {
+	font-weight:bold;
+	color:#F00;
+}
+
+.name-osusume p {
+	font-size: 12px;
+	padding-top: 8px;
+	line-height: 110% !important;
+}
+
+.name-osusume .txt_nedan {
+	color: #F00;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.25em;
+	padding-top: 5px;
+}
+
+.name-osusume .txt_zei02 {
+    font-size: 12px;
+	letter-spacing:-0.05em;
+	font-weight: normal;
+    color: #000;
+}
+
+.osusume-star {
+	color:#F00;
+	text-align:left;
+	font-size:14px;
+	margin-bottom:10px; 
+}
+
+#box-osusume {
+	width:750px;
+	display:-webkit-box;
+  	display:-ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#osusume-item {
+	width:690px;
+}
+
+.box-osusume-img {
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	width: 690px;
+	flex-wrap: wrap;
+}
+
+.box-osusume-info {}
+
+.osusume-item-image {
+	margin-bottom:5px;
+}
+
+#box-osusume .btn-left {
+	width:28px;
+}
+
+#box-osusume .btn-right {
+	width:28px;
+}
+
+#box-osusume .pagerBtn {
+	cursor: pointer;
+}
+
+li.box-osusume-item {
+  width:165px;
+  text-align:left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 165px;
+  grid-template-columns: 165px;
+  -ms-grid-rows: 165px auto 25px 124px;
+  grid-template-rows: 165px auto 25px 136px;
+  margin-right: 10px;
+}
+
+li.box-osusume-item > *:nth-child(1) {
+  -ms-grid-row:1;
+  -ms-grid-column:1;
+}
+li.box-osusume-item > *:nth-child(2) {
+  -ms-grid-row:2;
+  -ms-grid-column:1;
+}
+li.box-osusume-item > *:nth-child(3) {
+  -ms-grid-row:3;
+  -ms-grid-column:1;
+}
+li.box-osusume-item > *:nth-child(4) {
+  -ms-grid-row:4;
+  -ms-grid-column:1;
+}
+
+li.box-osusume-item:nth-child(4n) {
+ margin-right: 0;
+}
+
+.osusume-shosai01 {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.osusume-shosai01-text {
+    color: #666;
+}

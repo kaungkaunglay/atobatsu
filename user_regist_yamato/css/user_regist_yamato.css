@@ -1,0 +1,35 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@user_regist_yamato_myacount_area
+-----------------------------------------------------------------------------*/
+#breadcrumb_area {padding-top: 15px;}
+
+.sec01 {padding: 15px;}
+
+.icon_yamato_s::before{margin-left: 0px;}
+.myacount_area{margin: 0px !important;}
+.user_regist_yamato .myacount_area h2{border-color: #FF4549 !important;}
+/* .icon_required{margin-left: 32px;} */
+
+.btn-yellow{background-color: #FDD000 !important; color:#000000 !important ;font-weight: bold;}
+.w-80{width: 80% !important;}
+.w-90{width: 90% !important;}
+.w-100{width: 100% !important;}
+.btn_yellow{margin: 0px 12px;}
+.sec01 .box01{margin-top: 49px;}
+.sec01 .box01 p{margin-bottom: 15px;}
+.sec01 .box02{margin-top: 24px;margin-bottom: 15px;}
+.sec01 .box02 h4{font-size: 10px;}
+.sec01 .box02 .input_name{margin-bottom: 19px;}
+.sec01 .box02 .input_name h4{margin-bottom: 5px;}
+.sec01 .box02 .txt_red{font-size: 8px;}
+.sec01 .box02 input{border: 1px solid #9A9A9A;height: 44px;padding: 15px;border-radius: 5px;}
+
+.myacount_list li a p {
+  padding-left: 30px;
+  font-size: 8px !important;
+}
+
+.myacount_list li:last-child a p{font-size: 10px !important;margin-top: 9px;}
+

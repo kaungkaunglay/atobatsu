@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="googlebot" content="INDEX,FOLLOW">
+    <meta name="Keywords" content="アダルトグッズ,大人のおもちゃ,女性,通販,CIAOMO">
+    <meta http-equiv="description"
+        content="大人のおもちゃ専門店として、約20年の運営実績を誇るNLS。1万点を超える多種多様なアダルトグッズを取り揃え、クチコミ件数も5万件以上。最大12％ものお得なポイント還元制度やプライバシーに配慮した各種サービスも充実し、はじめての方でも安心してお買い物ができます。">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-180x180.png" sizes="180x180">
+    <title>注文詳細 | マイアカウント | CIAOMO</title>
+    <link href="css/base_all.css" rel="stylesheet" type="text/css">
+    <link href="css/user_order_top.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="shortcut icon" href="images/common/favicon.ico">
+    <!--    <link rel="stylesheet" href="css/swiper.min.css"/>-->
+    <link rel="stylesheet" href="css/swiper.css" />
+</head>
+
+<body cz-shortcut-listen="true">
+
+
+    <!-- header -->
+    <header id="header_fix">
+        <div class="wrap header_container flex_j_center">
+            <div>
+                <h1 class="header-logo"><a href="/"><img src="images/common/header/logo_ciaomo.gif" alt="CIAOMO"></a>
+                </h1>
+            </div>
+            <!--<nav class="header_gmenu">
+            <ul>
+                <li class="header_sp_search"><a href="" target="_self"><div><img src="images/common/header/header_sp_search.png" alt=""></div><div>商品を探す</div></a></li>
+                <li class="header_sp_info"><span class="badge">1</span><a href="" target="_self"><div><img src="images/common/header/header_sp_info.png" alt=""></div><div>お知らせ</div></a></li>
+                <li class="header_sp_beginner"><a href="" target="_self"><div><img src= "images/common/header/header_sp_beginner.png" alt=""></div><div>初めての方</div></a></li>
+            </ul>
+        </nav>-->
+
+        </div>
+    </header>
+    <!-- //header -->
+    <!-- contents -->
+    <div id="contents">
+
+        <!-- main -->
+        <main id="main_area">
+            <!-- myacount_area -->
+            <article id="user_order_top_myacount_area">
+                <div class="sec01">
+                    <nav id="breadcrumb_area">
+                        <ul class="breadcrumb_list">
+                            <li class="breadcrumb_item"><a href="" class="breadcrumb_link">CIAOMO</a></li>
+                            <li class="breadcrumb_item"><a href="" class="breadcrumb_link">マイアカウント</a></li>
+                            <li class="breadcrumb_item">
+                                <a href="" class="breadcrumb_link">注文履歴</a>
+                            </li>
+                            <li class="breadcrumb_item">
+                                <a href="" class="breadcrumb_link">注文詳細</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h3>注文詳細</h3>
+                </div>
+                <div class="sec02">
+                    <div class="box01">
+                        <div class="order-card">
+                            <div class="order-status">
+                                <div class="order-detail">
+                                    <p>注文日時：2024/00/00 00:00</p>
+                                    <p>注文番号：4880-2968</p>
+                                </div>
+                                <button class="status-btn">発送準備前</button>
+                            </div>
+
+                            <ul>
+                                <li>
+                                    <div class="cart_contents">
+                                        <div class="cart_item_img"><img src="images/top_1000.jpg" alt=""></div>
+                                        <div class="cart_item_txt">
+                                            <p>テルテルデマ BON</p>
+                                            <p>商品コード：29784-4</p>
+                                            <p>数量：1 / 小計：<span class="subtotal">￥1,584</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="cart_contents">
+                                        <div class="cart_item_img"><img src="images/top_1000.jpg" alt=""></div>
+                                        <div class="cart_item_txt">
+                                            <p>Womanizer（ウーマナイザー）プレミアム２</p>
+                                            <p>商品コード：29784-4</p>
+                                            <p>数量：1 / 小計：<span class="subtotal">￥29,990</span></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>お買い上げ金額</h3>
+                </div>
+                <div class="sec03">
+                    <div class="box01">
+                        <div class="cart_wrap2">
+                            <div class="cart_total_amount">
+                                <div class="cart_total_amount_flex">
+                                    <!-- <div>
+                                        <h3>合計金額</h3>
+                                        <p>￥30,574</p>
+                                    </div> -->
+                                    <div>
+                                        <div class="details fw-b">内訳</div>
+                                        <div class="details">
+                                            <dt>小計</dt>
+                                            <dd>￥89,970</dd>
+                                        </div>
+                                        <div class="details txt_red">
+                                            <dt>ポイント利用</dt>
+                                            <dd>-￥1,000</dd>
+                                        </div>
+                                        <div class="details">
+                                            <dt>送料</dt>
+                                            <dd>￥0</dd>
+                                        </div>
+                                        <div class="details">
+                                            <dt>商品数量</dt>
+                                            <dd><span>3</span> 点</dd>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="total m-t10"><dt>合計<span>金額</span></dt><dd>￥88,970</dd></div>
+                                    </div>
+                                </div>
+                                <div class="total_orange">
+                                    <dt>獲得ポイント</dt>
+                                    <dd>22</dd>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list-display">
+                        <div class="tit bord-b">
+                            <h3 class="m-t30">会員情報</h3>
+                            <!--<div class="item_list d-none"><a href="" target="_blank">すべてみる</a></div>-->
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3>ご登録情報</h3>
+                                        <p>ご住所、配送方法の追加・変更。</p>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3>メールアドレス・パスワード変更</h3>
+                                        <p>メールアドレス・パスワードの変更。</p>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3>2段階認証</h3>
+                                        <p>セキュリティ設定。</p>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3>メールマガジン</h3>
+                                        <p>登録・解除。</p>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3>会員限定アンケート</h3>
+                                        <p>アンケートに答えてポイントをゲット。</p>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3 class="p-t5">会員規約</h3>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3 class="p-t5">ログアウト</h3>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="" class="item-display">
+                                    <div class="icon_question2">
+                                        <h3 class="p-t5">退会</h3>
+                                    </div>
+                                    <div class="right_arrow"><span class="dli-chevron-right"></span></div>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="cart_privacy">
+                        <div><a href="" target="_blank"><img src="images/common/footer/degi_smart.png" alt=""></a></div>
+                        <p>当店はお客様の個人情報をSSL暗号化し、安全な通信を提供しています。</p>
+                    </div>
+            </article>
+            <!-- //myacount_area -->
+
+        </main>
+        <!-- //main -->
+
+    </div>
+    <!-- contents -->
+    <footer id="footer_fix">
+        <div class="wrap">
+
+
+
+
+
+            <!-- copyright -->
+            <div id="copyright" class="left">
+                Copyright (C) <!-- 2024- -->
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>2024 大人のおもちゃとアダルトグッズ通販ショップ 1 NIGHT LOVE STORY　All Rights Reserved.<br>1 NIGHT LOVE
+                STORY　株式会社ニジューヨン・ビムーンズ
+            </div>
+            <!-- //copyright -->
+
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@user_order_bbs_myacount_area
+-----------------------------------------------------------------------------*/
+/* common */
+#breadcrumb_area {padding-top: 15px;}
+
+.sec01,.sec02,.sec03,.sec04 {padding: 15px;}
+.sec02,.sec03 {border-bottom: 1px solid #9A9A9A;}
+
+/* status_btn_component */
+.status-btn {width: max-content;height: max-content;border: none;padding: 5px;border-radius: 5px;cursor: pointer;background-color: #9a9a9a;color: #fff;font-size: 10px;}
+.status-btn.success {background-color: #C1FACF;color: #ff4549}
+.status-btn.warning {background-color: #fdf995;color: #ff4549;}
+
+/* order_status_components */
+.order-status {display: flex;margin-top: 10px;}
+.order-detail {display: flex;flex-direction: column;gap: 7px;}
+.status-btn {margin-left: auto;}
+
+/* order-list_components */
+.order-item {width: 100%;display: flex;flex-direction: column;gap: 15px;}
+.order-item > div {width: 100%;display: flex;}
+.order-item span {width: 25%;text-align: left;}
+.order-item span:last-child {text-align: right;}
+.order-item p {width: 50%;text-align: left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+
+/* ////////////////// section_04 ////////////////// */
+.myacount_area h3 {border-bottom: 1px solid #9a9a9a;padding: 9px 15px 5px;color: #9a9a9a;}
+.chat-list li {border-bottom: 1px solid #9a9a9a;padding: 15px 0 10px;}
+.chat-row {display: flex;gap: 10px;}
+.chat-list li:has(.service) .chat-meta {text-align: start;}
+.chat-list .chat-row.service {flex-direction: row-reverse;text-align: start;}
+.chat-message {width: max-content;border: 1px solid #ddd;padding: 10px;border-radius: 10px;line-break: anywhere;max-width: calc(100% - 40px);}
+.chat-icon {width: 40px;height: 40px;min-width: 40px;}
+.chat-icon img {width: 100%;vertical-align: baseline;}
+.chat-meta {font-size: 8px;color: #999;padding-top: 10px;text-align: end;}
+
+.accordion textarea {height: 175px;padding: 12px;resize: none;margin-top: 20px;}
+.btn_red {margin: 12px 27px 0;}
+.btn_red input[type="submit"]:enabled {background-color: #FF9D45 !important;}
+
+@media (max-width: 575px) {
+    .breadcrumb_list{height: 35px !important;}
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="googlebot" content="INDEX,FOLLOW" />
+    <meta name="Keywords" content="クチコミ投稿 | クチコミ | マイアカウント | CIAOMO" />
+    <meta http-equiv="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="img/favicon.ico" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-180x180.png" sizes="180x180" />
+    <title>返品のお問い合わせ | マイアカウント | CIAOMO</title>
+    <link href="css/base_all.css" rel="stylesheet" type="text/css" />
+    <link href="css/myaccount.css" rel="stylesheet" type="text/css">
+    <link href="css/contribute1.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/common/favicon.ico" />
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- header -->
+    <header id="header_fix">
+        <div class="wrap header_container flex_j_center">
+            <div>
+                <h1 class="header-logo">
+                    <a href="/"><img src="images/common/header/logo_ciaomo.gif" alt="CIAOMO" /></a>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div id="contents">
+
+        <!-- main -->
+        <main id="main_area">
+
+            <!-- myacount_area -->
+            <article id="myacount_area">
+
+                <!-- breadcrumb_area -->
+                <nav id="breadcrumb_area">
+                    <ul class="breadcrumb_list">
+                        <li class="breadcrumb_item">
+                            <a href="" class="breadcrumb_link">CIAOMO</a>
+                        </li>
+                        <li class="breadcrumb_item">
+                            <a href="" class="breadcrumb_link">マイアカウント</a>
+                        </li>
+                        <li class="breadcrumb_item">
+                            <a href="" class="breadcrumb_link">クチコミ</a>
+                        </li>
+                        <li class="breadcrumb_item">
+                            <a href="" class="breadcrumb_link">クチコミ投稿</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- //breadcrumb_area -->
+
+                <div class="tit_name">
+                    <h1>クチコミ投稿</h1>
+                </div>
+
+                <!-- contribute1 -->
+                <div class="contribute1">
+
+                    <!-- section_01 -->
+                    <div class="sec01">
+                        <p>
+                            商品に関するクチコミのご協力をお願いします。
+                        </p>
+                    </div>
+                    <!-- //section_01 -->
+
+                    <div class="myacount_area">
+                        <h2>クチコミする商品</h2>
+                    </div>
+
+                    <!-- section_02 -->
+                    <div class="sec02">
+                        <div class="cart_contents">
+                            <div class="cart_item_img"><img src="images/top_1000.jpg" alt=""></div>
+                            <div class="cart_item_txt">
+                                <p>テルテルデマ BON</p>
+                                <p>【購入日】2024/04/13</p>
+                                <p>クチコミ件数：127件</p>
+                            </div>
+                        </div>
+                        <p class="ts10 m-t15 fw-b">ニックネーム</p>
+                        <p class="ts10 m-t10">ニックネームのご入力がない場合はゲストとして表示されます。</p>
+                        <div class="sp-addr-input-wrap m-t10">
+                            <input type="text"  value="ゲス">
+                            <button type="submit" class="m-t10">ニックネームを変更</button>
+                        </div>
+                        <div class="m-t25">
+                            <p class="fw-b">商品評価
+                                <span class="icon_required m-l10">必須</span>
+                            </p>
+                        </div>
+                        <div class="pulldown m-t10">
+                            <label>
+                                <select>
+                                    <option value="5">★★★★★ (とても気に入った)</option>
+                                    <option value="4">★★★★ (気に入った)</option>
+                                    <option value="3">★★★ (普通)</option>
+                                    <option value="2">★★ (あまり気に入らなかった)</option>
+                                    <option value="1">★ (全く気に入らなかった)</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="m-t25">
+                            <p class="fw-b">クチコミタイトル
+                                <span class="icon_required m-l10">必須</span>
+                                <span class="txt_red ts10 m-l10">24文字以内でご入力ください</span>
+                            </p>
+                        </div>
+                        <div class="sp-addr-input-wrap m-t10">
+                            <input type="text" maxlength="24" placeholder="1番みんなに伝えたいポイントはなんですか？">
+                        </div>
+                        <div class="m-t25">
+                            <p class="fw-b">クチコミ本文 
+                                <span class="icon_required m-l10">必須</span>
+                                <span class="txt_red ts10 m-l10">100文字以上でご入力ください</span>
+                            </p>
+                        </div>
+                        <div class="bg_green  p-all10 red m-t10 m-b10 ts10">
+                            <p class="ts10">このクチコミが最初のクチコミになるかもしれません。</p>
+                            <a href="#" class="txt_red">参考になるクチコミの書き方</a>  
+                        </div>
+                        <div class="accordion">
+                            <textarea placeholder="商品の気に入ったところ、気に入らなかったところなどご入力ください。普段この商品をどのような時に使用していますか？"></textarea>
+                            <div class="box01">
+                                <div class="btn_bg_white_100_60">
+                                    <a href="">
+                                        <button type="submit" class="btn_normal_red">クチコミをする</button>
+                                    </a>
+                                </div>
+                                <div class="links m-t25 m-r15">
+                                    <span>
+                                        <a href="#" class="txt_red">クチコミの定義</a>
+                                    </span>
+                                    <span>
+                                        <a href="#" class="txt_red">クチコミの注意点</a>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //section_02 -->
+
+                    
+                    <!-- section_03 -->
+                    <div class="sec03">
+
+                        <h3 class="headsup_list ts12">クチコミの定義</h3>
+
+                        <div class="m-t15">
+                            <p>当店のクチコミはご本人様もしくはそのパートナー様が実際に使用されたことのある商品クチコミの対象としています。お客様の評価で採用・不採用はありません。採用基準は★の数ではなく内容です。</p>
+                            <p>購入ユ－ザーの参考になる充実したクチコミ情報掲載を基本とする『審査制』を導入しています。ご投稿の前に以下の注意点を参考にお願い致します。</p>
+                            <p>以下の様なご投稿は不採用となりますのでご注意下さい。</p>
+                        </div>
+                        <div class="m-t25">
+                            <ul class="simple_list ">
+                                <li>HTMLタグは使用出来ません</li>
+                                <li>改行は反映されますので読みやすいように適度に改行してください</li>
+                                <li>100文字以下の文章</li>
+                                <li>製品の特性や感想を表現できていない</li>
+                                <li>｢凄い｣｢お勧め｣｢お買い得｣などの言葉に対する理由付けがない</li>
+                                <li>クチコミとは異なる質問や商品不良報告等の内容である</li>
+                                <li>
+                                    一般的な使い方とは異なる使用法である
+                                    <p class="m-t5 indent">※ 虚偽の内容または使用したことがない商品を偽って投稿した場合には、保持ポイントを無効とし、それによって受けた損害を請求させて頂きます。</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //section_03 -->
+
+                    <!-- section_04 -->
+                    <div class="sec04">
+
+                        <h3 class="headsup_list ts12">クチコミの注意点</h3>
+
+                        <div>
+                            <ul class="simple_list">
+                                <li>
+                                    他人の権利、利益、名誉等を損ねたり法令に違反する内容を送信することはできませんのでご注意下さい。
+                                </li>
+                                <li>
+                                    当店が不適切と判断した場合には予告なく投稿を削除する場合がございます。
+                                    <p class="m-t15 m-b10 indent">※ 冒涜的、猥褻、悪意のあるコメント、薬事法に抵触する可能性のある表現等</p>
+                                </li>
+                                <li>
+                                    クチコミの内容に不適切な表現や不備があった場合、当店で修正して掲載する場合があります。
+                                </li>
+                                <li>
+                                    クチコミは送信されたコンテンツについて、NLSサイト上で公開するなど、種々の利用をおこないます。
+                                </li>
+                                <li>
+                                    メーカー・ショップ関係者による投稿は禁止されております。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //section_04 -->
+                
+                </div>
+                <!-- //contribute1 -->
+
+                <!-- list-display start -->
+                <div class="myacount_area">
+                    <h2>会員情報</h2>
+                    <ul class="myacount_list">
+                        <li class="icon_guide_account"><a href="/" target="_blank">ご登録情報<p>ご住所、配送方法の追加・変更</p></a></li>
+                        <li class="icon_guide_mail"><a href="/" target="_blank">メールアドレス・パスワード変更<p>メールアドレス・パスワードの変更</p></a></li>
+                        <li class="icon_guide_security"><a href="/" target="_blank">2段階認証<p>セキュリティ設定</p></a></li>
+                        <li class="icon_guide_magazine"><a href="/" target="_blank">メールマガジン<p>登録・解除</p></a></li>
+                        <li class="icon_guide_questionnaire"><a href="/" target="_blank">会員限定アンケート<p>アンケートに答えてポイントをゲット</p></a></li>
+                        <li class="icon_guide_service"><a href="/" target="_blank">会員規約</a></li>
+                        <li class="icon_guide_logout"><a href="/" target="_blank">ログアウト</a></li>
+                        <li class="icon_guide_withdrawal"><a href="/" target="_blank">退会<p class="txt_red">※現在発注前のご注文がありますので、退会処理はできません。</p></a></li>
+                    </ul>
+                </div>
+                <!-- //list-display -->
+
+                <!-- cart_privacy -->
+                <div class="cart_privacy">
+                    <div>
+                        <a href="" target="_blank"><img src="images/common/footer/degi_smart.png" alt="" /></a>
+                    </div>
+                    <p>
+                        当店はお客様の個人情報をSSL暗号化し、安全な通信を提供しています。
+                    </p>
+                </div>
+                <!-- //cart_privacy -->
+
+            </article>
+            <!-- //myacount_area -->
+
+        </main>
+        <!-- //main -->
+
+    </div>
+    <!-- contents -->
+
+    <!-- footer -->
+    <footer id="footer_fix">
+        <div class="wrap">
+            <div id="copyright">
+                Copyright (C)
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+                大人のおもちゃとアダルトグッズ通販ショップ 1 NIGHT LOVE STORY　All
+                Rights Reserved.<br />1 NIGHT LOVE
+                STORY　株式会社ニジューヨン・ビムーンズ
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+
+</html>

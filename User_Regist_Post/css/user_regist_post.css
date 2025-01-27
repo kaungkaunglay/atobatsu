@@ -1,0 +1,30 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@user_regist_post_myacount_area
+-----------------------------------------------------------------------------*/
+/* breadcrumb_area style start */
+#breadcrumb_area {
+  padding-top: 15px;
+}
+
+/* breadcrumb_area style end */
+.sec01 {
+ padding: 15px;
+}
+
+.icon_post_office_s{color: #FF4549;}
+.icon_post_office_s::before{margin-left: 0px;}
+.myacount_area{margin: 0px !important;}
+.user_regist_post .myacount_area h2{border-color: #FF4549 !important;}
+
+.tit_name_sub{margin-bottom: 25px;}
+.sec01 .delivery_map{margin-bottom: 25px;}
+.sec01 .delivery_map a{margin-top: 10px;width: 215px;}
+
+.myacount_list li a p {
+  padding-left: 30px;
+  font-size: 8px !important;
+}
+
+.myacount_list li:last-child a p{font-size: 10px !important;margin-top: 9px;}

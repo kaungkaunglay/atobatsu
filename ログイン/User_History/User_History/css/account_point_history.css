@@ -1,0 +1,151 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@account_point_history_myacount_area
+-----------------------------------------------------------------------------*/
+
+
+#account_point_history_myacount_area p{padding: 14px;font-size: 14px;}
+#account_point_history_myacount_area h1:nth-child(2){padding:0px 14px 14px 14px;font-weight: bold;border-bottom: 2px solid red;font-size: 14px;}
+#account_point_history_myacount_area .tit{display: flex;margin: 15px 14px;font-size: 14px;align-items: center;justify-content: space-between;padding: 15px 0px;}
+#account_point_history_myacount_area .tit p{font-size: 14px;padding: 0px;}
+#account_point_history_myacount_area .swiper-slide{border: 1px solid gray;width: 350px !important;}
+#account_point_history_myacount_area .swiper-slide .price_aria{padding: 0px 10px;}
+
+#account_point_history_myacount_area .sec01_box1{margin: 35px;border-radius: 5px;padding: 10px 30px; }
+#account_point_history_myacount_area .sec01_box1 .sec01_txt01{display: flex;justify-content: space-between;align-items:center;border-bottom: 1px solid #ff4945;}
+#account_point_history_myacount_area .sec01_box1 .sec01_txt01 p{padding: 15px 2px;}
+#account_point_history_myacount_area .sec01_box1 .sec01_txt01 p span{font-size: 25px;}
+
+#account_point_history_myacount_area .sec01_box1 .sec01_txt02{display: flex;justify-content: space-between;align-items: center;}
+#account_point_history_myacount_area .sec01_box1 .sec01_txt02 p{padding: 16px 2px;}
+#account_point_history_myacount_area .sec01_box1 .sec01_txt02 p:nth-child(2){font-size: 25px;}
+
+#account_point_history_myacount_area .sec02 h2{padding: 12px;font-weight: bold;border-bottom: 1px solid rgba(128, 128, 128, 0.438);}
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 div:nth-child(1) p,
+#account_point_history_myacount_area .sec02 .sec02_box01 .sec02_tit{background-color: rgba(233, 227, 227, 0.658);padding: 5px 15px;}
+
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span{display: flex;justify-content: space-between;height: 40px;align-items: center;}
+
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2){display: flex;justify-content: center;align-items: center;color: red;}
+
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2){display: flex;justify-content: center;align-items: center;}
+
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(1) p:nth-child(2) span{font-size: 18px;}
+
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2),
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2){display: flex;justify-content: center;align-items: center;color: orange;}
+
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span,
+#account_point_history_myacount_area .sec02 .sec02_box01 .expire_point1 span:nth-child(3) p:nth-child(2) span{font-size: 18px;}
+
+#account_point_history_myacount_area .card_container {
+    grid-template-columns: auto auto;
+}
+#account_point_history_myacount_area .card_container li a{
+    border: 1px solid gray;padding:10px 0px;
+    border-radius: 5px;
+}
+/* #account_point_history_myacount_area .card_container .ignore .price_aria .item_price{color:red;font-size: 14px !important;} */
+
+/* #account_point_history_myacount_area .card_container .ignore .icon_star {
+    padding-left: 15px;
+} */
+/* #account_point_history_myacount_area .card_container .ignore .item_name{font-size: 14px !important;} */
+#account_point_history_myacount_area .pagination{display: flex; gap: 5px;justify-content: end;margin: 15px 15px 0px 0px;}
+#account_point_history_myacount_area .pagination span{border: 1px solid rgb(235, 90, 90);width: 35px;height: 35px;border-radius: 50%;display: flex;justify-content: center;align-items: center;line-height: 35px;color: rgb(223, 28, 28);}
+#account_point_history_myacount_area .pagination span:hover{background-color: rgb(255, 0, 0);color: white;cursor: pointer;}
+#account_point_history_myacount_area .date{text-align: center;font-size: 14px;color: gray;}
+
+#account_point_history_myacount_area .list-display{margin-top:-40px;}
+
+#account_point_history_myacount_area .tit{
+    padding: 20px 15px;  display: flex; align-items: baseline;
+    margin: 15px 0px;
+}
+#account_point_history_myacount_area .tit h1{font-weight: bold;font-size: 14px;}
+
+#account_point_history_myacount_area .bord-b{border-bottom: 1px solid #9a9a9a;}
+#account_point_history_myacount_area .item-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #9a9a9a;
+}
+#account_point_history_myacount_area .item-display .icon_question2 h3{font-size: 14px;font-weight:500;}
+#account_point_history_myacount_area .item-display .icon_question2 p{font-size: 12px;padding:5px 0px;color: #545454;}
+
+#account_point_history_myacount_area .cart_privacy p{font-size: 12px !important;}
+#footer_fix #copyright{font-size: 12px;}
+
+#account_point_history_myacount_area .card_container .ignore .checkmark-container {
+    width: 25px; 
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px auto;
+}
+
+#account_point_history_myacount_area .card_container .ignore .checkmark {
+    font-size: 15px; 
+    color: #ffffff;
+}
+
+#account_point_history_myacount_area .sec01 #breadcrumb_area{padding: 15px 15px;}
+#account_point_history_myacount_area .sec01 #breadcrumb_area ul li{font-size: 10px;}
+#account_point_history_myacount_area .sec01 .sec01_box1{border: 1px solid #ff4945;}

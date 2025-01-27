@@ -1,0 +1,66 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+Breadcrumb Area
+-----------------------------------------------------------------------------*/
+
+#breadcrumb_area { padding-top: 15px; }
+
+/*-----------------------------------------------------------------------------
+User Registration My Account Area
+-----------------------------------------------------------------------------*/
+.myacount_area h3 { border-bottom: 1px solid #9a9a9a; padding: 10px 15px;} 
+
+.w-400{width: 400px;}
+.w-300{width: 300px;}
+
+/*-----------------------------------------------------------------------------
+Input Styles
+-----------------------------------------------------------------------------*/
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), select, textarea { background-color: #EEEEEE !important; } 
+.radio-group { gap: 16px; } 
+.radio-group input[type="radio"] { margin-right: 5px; } 
+.point-information { width: 100%; background-color: #C1FACF; padding: 5px 0px; border-radius: 5px; } 
+.sp-addr-num-wrap { justify-content: flex-start !important; gap: 15px; }
+
+/* For inputs with minimum width of 80px */
+.input-min-width-80 {min-width: 80px;}
+
+/* For inputs with 100% width */
+.input-width-100 {width: 100% !important;}
+
+.btn_callzip a { padding: 14px 16px 14px !important;}
+
+/*-----------------------------------------------------------------------------
+Border and Button Styles
+-----------------------------------------------------------------------------*/
+
+.btn-outline-danger, .btn-danger{ padding: 5px 10px; border-radius: 5px; } 
+.btn-outline-danger { border: 1px solid #FF4549; color: #FF4549; } 
+.btn-square { display: inline-block; background-color: #FF4549; color: #FFFFFF; cursor: pointer; } 
+.btn-submit{ appearance: none; font-size: 12px; background-color: #FFF; font-weight: normal; width: 50px; height: 31px; }
+
+/*-----------------------------------------------------------------------------
+Icon Styles
+-----------------------------------------------------------------------------*/
+
+.icon-bank-pay::after { content: ''; display: inline-block; width: 35px; height: 35px; background: url(../images/common/icon_bank_pay.png) no-repeat left center; background-size: contain; vertical-align: middle; } 
+.icon_convenience_store_s, .icon_post_office_s, .icon_yamato_s { justify-content: flex-start !important; border-bottom: 0.5px solid #FF4549; }
+
+.box01 .flex_layout:nth-child(1) p{width: 150px;  word-wrap: break-word;}
+.box01 .address3>p:nth-child(2){width: 200px; word-wrap: break-word;}
+
+/* sec05,sec06 start */
+.sec05 .box01 .address3 .row01{display: flex;}
+.sec05 .box01 .address3 .row01 h3{width: 50px;}
+.sec05 .box01 .address3 .row01 p{width: 110px;  word-wrap: break-word;}
+.sec05 .box01 .address3 .row02 .col01,
+.sec06 .box01 .address3 .row02 .col01,
+.sec06 .box02 .address3 .row02 .col01{width: 70%;}
+.sec05 .box01 .address3 .row02 .col01 p:nth-child(1),
+.sec06 .box01 .address3 .row02 .col01 p,
+.sec06 .box02 .address3 .row02 .col01 p{width: 200px;  word-wrap: break-word;}
+.sec06 .box01 .address3 .row02,
+.sec06 .box02 .address3 .row02{align-items: center;margin-top: 20px;}
+/* sec05,sec06 end */

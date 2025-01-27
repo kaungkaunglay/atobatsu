@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./user_login.css">
+</head>
+<body>
+    <div class="logo-container">
+        <div class="logo">
+            <img src="./images/logo_ciaomo.png" alt="apple-touch-icon">
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-title">ログイン</div>
+        
+        <form>
+            <input type="email" placeholder="メールアドレス">
+            <input type="password" placeholder="パスワード">
+            
+            <div class="forgot-password">
+                <label>パスワードを忘れた方は<a class="label" href="#">こちら</a></label>
+            </div>
+            
+            <button type="submit" class="login-button"><b>ログイン</b></button>
+            
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">次回からログインを省略する</label>
+            </div>
+        </form>
+
+        <div class="social-login">
+            <div class="social-login-title">他のサービスでログイン</div>
+            
+            <button class="social-button">
+                <img src="./images/icon_google.png" alt="Google">
+                Googleアカウントでログイン
+            </button>
+            
+            <button class="social-button">
+                <img src="./images/icon_x.png" alt="X">
+                Xアカウントでログイン
+            </button>
+        </div>
+    </div>
+</body>
+</html>

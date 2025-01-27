@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <meta name="robots" content="INDEX,FOLLOW">
+  <meta name="googlebot" content="INDEX,FOLLOW">
+  <meta name="Keywords" content="アダルトグッズ,大人のおもちゃ,女性,通販,CIAOMO">
+  <meta http-equiv="description"
+    content="大人のおもちゃ専門店として、約20年の運営実績を誇るNLS。1万点を超える多種多様なアダルトグッズを取り揃え、クチコミ件数も5万件以上。最大12％ものお得なポイント還元制度やプライバシーに配慮した各種サービスも充実し、はじめての方でも安心してお買い物ができます。">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="images/common/favicon.ico">
+  <link rel="apple-touch-icon" href="images/common/apple-touch-icon-180x180.png" sizes="180x180">
+  <title>ご登録情報 | マイアカウント | CIAOMO</title>
+  <link href="css/base_all.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/myaccount.css">
+  <link href="css/user_regist_seko.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="images/common/favicon.ico">
+</head>
+
+<body cz-shortcut-listen="true">
+  <!-- header -->
+  <header id="header_fix">
+    <div class="wrap header_container flex_j_center">
+      <div>
+        <h1 class="header-logo"><a href="/"><img src="images/common/header/logo_ciaomo.gif" alt="CIAOMO"></a>
+        </h1>
+      </div>
+    </div>
+  </header>
+  <!-- //header -->
+  <!-- contents -->
+  <div id="contents">
+    <!-- main -->
+    <main id="main_area">
+      <!-- myacount_area -->
+      <article id="myacount_area">
+        <!-- breadcrumb_area -->
+        <nav id="breadcrumb_area">
+          <ul class="breadcrumb_list">
+            <li class="breadcrumb_item"><a href="" class="breadcrumb_link">CIAOMO</a></li>
+            <li class="breadcrumb_item"><a href="" class="breadcrumb_link">マイアカウント</a></li>
+            <li class="breadcrumb_item">
+              <a href="" class="breadcrumb_link">ご登録情報</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- //breadcrumb_area -->
+        <div class="tit_name">
+          <h1>ご登録情報</h1>
+        </div>
+        <!-- user_regist_my_acount_area -->
+        <div class="user_regist_my_acount_area">
+          <div class="myacount_area m-t0">
+            <h2 class="ts10">ご登録済み住所1<span class="icon_required m-l10">必須</span></h2>
+          </div>
+          <div class="sec01">
+            <div class="sp-addr-input-wrap4">
+              <div>
+                <div class="input_name">
+                  <div class="m-b5">お名前<span class="icon_required m-l10">必須</span></div>
+                  <input class="valid m-r5" name="cname1" size="17" value="" type="text" aria-required="true"
+                    aria-invalid="false" placeholder="氏名">
+                  <input class=" " name="cname2" size="17" value="" type="text" placeholder="名前名前">
+                  <div class="err_msg_cname err_box"></div>
+                </div>
+                <div class="input_name">
+                  <span class="m-r5"><input class=" " name="ckana1" size="15" value="" type="text"
+                      placeholder="シメイ"></span>
+                  <span><input class=" " name="ckana2" size="14" value="" type="text" placeholder="ナマエナマエ"></span>
+                </div>
+                <div class="err_msg_ckana err_box"></div>
+              </div>
+            </div>
+            <div class="sp-addr-input-wrap2">
+              <div>
+                <div>
+                  <div class="input_name">
+                    <div class="m-b5">郵便番号<span class="icon_required m-l10">必須</span></div>
+                    <div class="sp-addr-num-wrap">
+                      <span class="sp-addr-num-wrap__inner">
+                        <input class=" input-min-width-80 " name="czip1" size="3" maxlength="3" value="100" type="text">
+                        <div class="p-lr10">-</div>
+                        <input class=" input-min-width-80 " name="czip2" size="4" maxlength="4" value="1000"
+                          type="text">
+                      </span>
+                      <div>
+                        <span class="btn_callzip"><a href="javascript:void(0);">住所を自動入力</a></span>
+                      </div>
+                    </div>
+                    <div class="pulldown m-b5">
+                      <div class="m-b5">都道府県<span class="icon_required m-l10">必須</span></div>
+                      <input class=" valid input-width-100 " name="prefecture" size="15" value="" type="text"
+                        placeholder="東京都" aria-required="true" aria-invalid="false">
+                    </div>
+                    <div>
+                      <input class=" valid input-width-100 w-100" name="cadd2" size="15" value="" type="text"
+                        placeholder="東京都千代田区鍛冶町00-000　XXXXビル1F" aria-required="true" aria-invalid="false">
+                    </div>
+                    <div class="err_msg_cadd2 err_box" style="display: none;"></div>
+                  </div>
+                  <div class="input_name">
+                    <div class="m-b5">電話番号<span class="icon_required m-l10">必須</span><span
+                        class="red m-l10">数字のみ　ハイフンは不要です</span></div>
+                    <div><input class=" input-width-100 " name="ctel" size="15" value="" type="text"
+                        placeholder="012345678901">
+                    </div>
+                    <div class="err_msg_ckana err_box"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="myacount_area border-top-gray">
+            <h2>生年月日</h2>
+          </div>
+          <div class="sec02 p-lr12 m-b25">
+            <div class="sp-addr-input-wrap m-t15">
+              <div class="pulldown">
+                <select name="birth_y" id="birth_y">
+                  <option value="" selected="">年選択</option>
+                  <option value="2006">2006(平成18)</option>
+                  <option value="2005">2005(平成17)</option>
+                  <option value="2004">2004(平成16)</option>
+                  <option value="2003">2003(平成15)</option>
+                  <option value="2002">2002(平成14)</option>
+                  <option value="2001">2001(平成13)</option>
+                  <option value="2000">2000(平成12)</option>
+                  <option value="1999">1999(平成11)</option>
+                  <option value="1998">1998(平成10)</option>
+                  <option value="1997">1997(平成9)</option>
+                  <option value="1996">1996(平成8)</option>
+                  <option value="1995">1995(平成7)</option>
+                  <option value="1994">1994(平成6)</option>
+                  <option value="1993">1993(平成5)</option>
+                  <option value="1992">1992(平成4)</option>
+                  <option value="1991">1991(平成3)</option>
+                  <option value="1990">1990(平成2)</option>
+                  <option value="1989">1989(平成1)</option>
+                  <option value="1988">1988(昭和63)</option>
+                  <option value="1987">1987(昭和62)</option>
+                  <option value="1986">1986(昭和61)</option>
+                  <option value="1985">1985(昭和60)</option>
+                  <option value="1984">1984(昭和59)</option>
+                  <option value="1983">1983(昭和58)</option>
+                  <option value="1982">1982(昭和57)</option>
+                  <option value="1981">1981(昭和56)</option>
+                  <option value="1980">1980(昭和55)</option>
+                  <option value="1979">1979(昭和54)</option>
+                  <option value="1978">1978(昭和53)</option>
+                  <option value="1977">1977(昭和52)</option>
+                  <option value="1976">1976(昭和51)</option>
+                  <option value="1975">1975(昭和50)</option>
+                  <option value="1974">1974(昭和49)</option>
+                  <option value="1973">1973(昭和48)</option>
+                  <option value="1972">1972(昭和47)</option>
+                  <option value="1971">1971(昭和46)</option>
+                  <option value="1970">1970(昭和45)</option>
+                  <option value="1969">1969(昭和44)</option>
+                  <option value="1968">1968(昭和43)</option>
+                  <option value="1967">1967(昭和42)</option>
+                  <option value="1966">1966(昭和41)</option>
+                  <option value="1965">1965(昭和40)</option>
+                  <option value="1964">1964(昭和39)</option>
+                  <option value="1963">1963(昭和38)</option>
+                  <option value="1962">1962(昭和37)</option>
+                  <option value="1961">1961(昭和36)</option>
+                  <option value="1960">1960(昭和35)</option>
+                  <option value="1959">1959(昭和34)</option>
+                  <option value="1958">1958(昭和33)</option>
+                  <option value="1957">1957(昭和32)</option>
+                  <option value="1956">1956(昭和31)</option>
+                  <option value="1955">1955(昭和30)</option>
+                  <option value="1954">1954(昭和29)</option>
+                  <option value="1953">1953(昭和28)</option>
+                  <option value="1952">1952(昭和27)</option>
+                  <option value="1951">1951(昭和26)</option>
+                  <option value="1950">1950(昭和25)</option>
+                  <option value="1949">1949(昭和24)</option>
+                  <option value="1948">1948(昭和23)</option>
+                  <option value="1947">1947(昭和22)</option>
+                  <option value="1946">1946(昭和21)</option>
+                  <option value="1945">1945(昭和20)</option>
+                  <option value="1944">1944(昭和19)</option>
+                  <option value="1943">1943(昭和18)</option>
+                  <option value="1942">1942(昭和17)</option>
+                  <option value="1941">1941(昭和16)</option>
+                  <option value="1940">1940(昭和15)</option>
+                  <option value="1939">1939(昭和14)</option>
+                  <option value="1938">1938(昭和13)</option>
+                  <option value="1937">1937(昭和12)</option>
+                  <option value="1936">1936(昭和11)</option>
+                  <option value="1935">1935(昭和10)</option>
+                  <option value="1934">1934(昭和9)</option>
+                  <option value="1933">1933(昭和8)</option>
+                  <option value="1932">1932(昭和7)</option>
+                  <option value="1931">1931(昭和6)</option>
+                  <option value="1930">1930(昭和5)</option>
+                  <option value="1929">1929(昭和4)</option>
+                  <option value="1928">1928(昭和3)</option>
+                  <option value="1927">1927(昭和2)</option>
+                  <option value="1926">1926(昭和1)</option>
+                  <option value="1925">1925</option>
+                  <option value="1924">1924</option>
+                  <option value="1923">1923</option>
+                  <option value="1922">1922</option>
+                  <option value="1921">1921</option>
+                  <option value="1920">1920</option>
+                  <option value="1919">1919</option>
+                  <option value="1918">1918</option>
+                  <option value="1917">1917</option>
+                  <option value="1916">1916</option>
+                  <option value="1915">1915</option>
+                  <option value="1914">1914</option>
+                  <option value="1913">1913</option>
+                  <option value="1912">1912</option>
+                  <option value="1911">1911</option>
+                  <option value="1910">1910</option>
+                  <option value="1909">1909</option>
+                  <option value="1908">1908</option>
+                  <option value="1907">1907</option>
+                  <option value="1906">1906</option>
+                  <option value="1905">1905</option>
+                  <option value="1904">1904</option>
+                  <option value="1903">1903</option>
+                  <option value="1902">1902</option>
+                  <option value="1901">1901</option>
+                </select>年
+                <select name="birth_m" id="birth_m">
+                  <option value="" selected="">月</option>
+                  <option value="01">1</option>
+                  <option value="02">2</option>
+                  <option value="03">3</option>
+                  <option value="04">4</option>
+                  <option value="05">5</option>
+                  <option value="06">6</option>
+                  <option value="07">7</option>
+                  <option value="08">8</option>
+                  <option value="09">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>月
+                <select name="birth_d" id="birth_d">
+                  <option value="" selected="">日</option>
+                  <option value="01">1</option>
+                  <option value="02">2</option>
+                  <option value="03">3</option>
+                  <option value="04">4</option>
+                  <option value="05">5</option>
+                  <option value="06">6</option>
+                  <option value="07">7</option>
+                  <option value="08">8</option>
+                  <option value="09">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>日
+              </div>
+            </div>
+          </div>
+          <div class="myacount_area border-top-gray">
+            <h2>アンケート</h2>
+          </div>
+          <div class="sec03 p-lr12">
+            <div class="form-group m-t15">
+              <label for="gender" class="btn-outline-danger">性別</label>
+              <div class="radio-group flex_layout flex_a_center m-t15">
+                <label><input type="radio" name="gender" value="女性"> 女性</label>
+                <label><input type="radio" name="gender" value="男性"> 男性</label>
+                <label><input type="radio" name="gender" value="その他"> その他</label>
+              </div>
+            </div>
+            <div class="form-group m-t25">
+              <label for="interest" class="btn-outline-danger">恋愛対象</label>
+              <div class="radio-group flex_layout flex_a_center m-t15">
+                <label><input type="radio" name="interest" value="女性"> 女性</label>
+                <label><input type="radio" name="interest" value="男性"> 男性</label>
+                <label><input type="radio" name="interest" value="その他"> その他</label>
+              </div>
+            </div>
+            <div class="form-group m-t25">
+              <label for="occupation" class="btn-outline-danger">職業</label>
+              <div class="radio-group flex_layout flex_a_center advanced_flex_wrap m-t15">
+                <label><input type="radio" name="occupation" value="会社員"> 会社員</label>
+                <label><input type="radio" name="occupation" value="自営業"> 自営業</label>
+                <label><input type="radio" name="occupation" value="役員"> 役員</label>
+                <label><input type="radio" name="occupation" value="主婦"> 主婦</label>
+              </div>
+              <div class="radio-group flex_layout flex_a_center advanced_flex_wrap m-t15">
+                <label><input type="radio" name="occupation" value="学生"> 学生</label>
+                <label><input type="radio" name="occupation" value="無職"> 無職</label>
+                <label><input type="radio" name="occupation" value="その他"> その他</label>
+              </div>
+            </div>
+            <div class="point-information txt_center m-t25">
+              <p>生年月日・アンケートにすべて回答すると <br>
+                <span class="txt_red ts16 fw-b">100ポイントプレゼント</span>（初回のみ）
+              </p>
+            </div>
+            <div class="btn_red m-t15 m-b25">
+              <input type="submit" value="登録する">
+            </div>
+          </div>
+          <div class="myacount_area m-t25 border-top-gray">
+            <h2>ご登録済み住所2</h2>
+          </div>
+          <div class="sec04 p-lr12 m-b25">
+            <div class="box01 flex_layout flex_j_between m-t10">
+              <p>未登録</p>
+              <a href="#" class="btn-danger btn-square">新規登録する</a>
+            </div>
+          </div>
+          <div class="myacount_area m-t25 border-top-gray">
+            <h2>ご登録済み住所3</h2>
+          </div>
+          <div class="sec05 p-lr12">
+            <div class="box01 flex_layout">
+              <div class="address3 m-t10 flex-b-70 w-400">
+                <div class="flex_layout">
+                  <h3 class="m-r5 fw-b ts14">氏名 名前名前</h3>
+                  <p><span>シメイ</span> <span>ナマエナマエ</span></p>
+                </div>
+                <p class="m-t10 ts10">〒101-0044 <br>
+                  東京都千代田区鍛冶町00-000　XXXXビル1F</p>
+                <p class="m-t10">TEL：012345678901</p>
+              </div>
+              <div class="right m-t10 flex_layout flex_j_end flex_a_end flex-b-30" style="width: 100%;">
+                <div class="flex_layout flex_j_end flex_a_center" style="width: 100%;">
+                  <form action="#">
+                    <input class="btn-submit btn-outline-danger" type="submit" value="変更">
+                  </form>
+                  <div class="icon-bank-pay m-l10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="myacount_area m-t25 border-top-gray">
+            <h2 class="ts10">店舗で受け取る</h2>
+          </div>
+          <div class="sec06 p-lr12 m-t25">
+            <div class="box01">
+              <div class="icon_convenience_store_s m-t10 p-b5">
+                <h3 class="txt_red">コンビニ受取り</h3>
+              </div>
+            </div>
+            <div class="box02 m-t25">
+              <div class="icon_post_office_s m-t10 p-b5">
+                <h3 class="txt_red">郵便局受取り</h3>
+              </div>
+              <div class="flex_layout">
+                <div class="left-content flex-b-70">
+                  <h3 class="ts14 m-t10 fw-b">美浜郵便局</h3>
+                  <p class="m-t25">千葉県千葉市美浜区真砂４－１－１</p>
+                </div>
+                <div class="right-content flex-b-30 m-t10 flex_layout flex_j_end flex_a_end" style="width: 100%;">
+                  <div class="flex_layout flex_j_end flex_a_center" style="width: 100%;">
+                    <form action="#">
+                      <input class="btn-submit btn-outline-danger" type="submit" value="変更">
+                    </form>
+                    <div class="icon-bank-pay m-l10"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box03 m-t25">
+              <div class="icon_yamato_s m-t10 p-b5">
+                <h3 class="txt_red">ヤマト運輸営業所止め</h3>
+              </div>
+              <div class="flex_layout flex_j_between m-t10">
+                <div class="left-content">
+                  <h3 class="ts14 fw-b">未登録</h3>
+                </div>
+                <div class="right-content">
+                  <a href="#" class="btn-danger btn-square">新規登録する</a>
+                </div>
+              </div>
+            </div>
+            <div class="btn_red m-t25">
+              <input type="submit" value="登録する">
+            </div>
+          </div>
+        </div>
+        <!-- list_item -->
+        <div class="myacount_area">
+
+          <div class="myaccount">
+            <h2>会員情報</h2>
+          </div>
+
+          <ul class="myacount_list">
+            <li class="icon_guide_account"><a href="/" target="_blank">ご登録情報<p>ご住所、配送方法の追加・変更</p></a></li>
+            <li class="icon_guide_mail"><a href="/" target="_blank">メールアドレス・パスワード変更<p>メールアドレス・パスワードの変更</p>
+              </a></li>
+            <li class="icon_guide_security"><a href="/" target="_blank">2段階認証<p>セキュリティ設定</p></a></li>
+            <li class="icon_guide_magazine"><a href="/" target="_blank">メールマガジン<p>登録・解除</p></a></li>
+            <li class="icon_guide_questionnaire"><a href="/" target="_blank">会員限定アンケート<p>アンケートに答えてポイントをゲット
+                </p></a></li>
+            <li class="icon_guide_service"><a href="/" target="_blank">会員規約</a></li>
+            <li class="icon_guide_logout"><a href="/" target="_blank">ログアウト</a></li>
+            <li class="icon_guide_withdrawal"><a href="/" target="_blank">退会<p class="txt_red">
+                  ※現在発注前のご注文がありますので、退会処理はできません。</p></a></li>
+          </ul>
+
+        </div>
+        <!-- //list_item -->
+
+        <!-- cart_privacy -->
+        <div class="cart_privacy">
+          <div><a href="" target="_blank"><img src="images/common/footer/degi_smart.png" alt=""></a>
+          </div>
+          <p>当店はお客様の個人情報をSSL暗号化し、安全な通信を提供しています。</p>
+        </div>
+        <!-- //cart_privacy -->
+
+      </article>
+      <!-- //myacount_area -->
+
+    </main>
+    <!-- //main -->
+
+  </div>
+  <!-- contents -->
+
+  <footer id="footer_fix">
+    <div class="wrap">
+      <!-- copyright -->
+      <div id="copyright" class="left">
+        Copyright (C) <!-- 2024- -->
+        <script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script>2024 大人のおもちゃとアダルトグッズ通販ショップ 1 NIGHT LOVE STORY　All Rights Reserved.<br>1 NIGHT LOVE
+        STORY　株式会社ニジューヨン・ビムーンズ
+      </div>
+      <!-- //copyright -->
+    </div>
+  </footer>
+</body>
+
+</html>

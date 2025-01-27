@@ -1,0 +1,32 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@contri_login
+-----------------------------------------------------------------------------*/
+
+#breadcrumb_area {padding-top: 15px;}
+
+.sec01 {padding: 15px 15px 0;}
+
+.yellow_box p{font-size: 12px;}
+.txt_link{text-decoration: underline !important;}
+
+/* square_bullet */
+.square_bullet {font-weight: bold;color: #ff4549;padding: 15px !important;margin-top: 20px;display: flex;flex-direction: column;}
+.square_bullet li{display: flex;position: relative;align-items: start;}
+.square_bullet li::before {content: '■';font-size: 25px;margin-right: 5px;position: absolute;color: #ff4549;top: -15px;}
+.square_bullet p {margin-left: 20px;}
+
+/* ////////////////// section_01 ////////////////// */
+.sec01 .myacount_area h2 {color: #545454;border-bottom: 2px solid #ff4549;}
+.logo{padding:5px 0px !important;}
+.box_link {text-align: right;margin-top: 14px;}
+.myacount_area .logo b {font-weight: normal;margin-left: 10px;}
+.myacount_area .logo {display: flex;align-items: center;}
+.myacount_area .logo:before {content: '';width: 20px;aspect-ratio: 1/1;background-color: #47AFFF;display: inline-block;background: url("../images/common/footer/icon_guide_account.png") no-repeat center/contain ;margin-right: 4px;}
+
+/* Responsive adjustments for iPhone SE */
+@media (max-width: 375px) {
+    .breadcrumb_list{height: 35px !important;}
+}
+

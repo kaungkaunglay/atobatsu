@@ -1,0 +1,185 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@account_order_myacount_area
+-----------------------------------------------------------------------------*/
+
+#user_history_myacount_area p {
+  padding: 12px;
+  font-size: 14px;
+}
+#user_history_myacount_area h3:nth-child(2) {
+  padding: 12px 12px 12px 12px;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+  font-size: 14px;
+}
+/* #user_history_myacount_area .tit{display: flex;margin: 15px 14px;font-size: 14px;align-items: center;justify-content: space-between;padding: 15px 0px;} */
+/* #user_history_myacount_area .tit p{font-size: 14px;padding: 0px;} */
+
+#user_history_myacount_area .sec01 {
+  margin-bottom: 12px;
+}
+
+#user_history_myacount_area .sec01 p {
+  font-size: 12px;
+}
+
+#user_history_myacount_area .sec01 p span {
+  text-decoration: underline;
+  color: #47afff;
+}
+#user_history_myacount_area .sec01 .content{margin-top: 12px;}
+#user_history_myacount_area .sec01 .content a{margin: 12px;text-decoration: underline;color: #47afff;cursor: pointer;}
+
+#user_history_myacount_area .sec02,.sec03 {
+  border-bottom: 1px solid #9a9a9a;
+  
+}
+/* #user_history_myacount_area .sec02 span,.sec03 span,.sec04 span,.sec06 span {
+  background-color: #ff4945;
+  color: #ffff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 60px;
+} */
+
+#user_history_myacount_area .sec02 .content{padding-bottom: 0px;padding-top: 24px;}
+
+#user_history_myacount_area .sec02 .box01 {
+  border: 1px solid #9a9a9a;
+  border-radius: 5px;
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+#user_history_myacount_area label{width: 170px;height: 35px;display: flex;align-items: center;}
+#user_history_myacount_area .sec02 button{margin-left: auto;display: block;margin-right: 12px;border: 1px solid #FF4945;
+    border-radius: 5px;padding:5px;color: #FF4945;cursor: pointer;margin-bottom: 24px;width: 50px;height: 30px;}
+    #user_history_myacount_area .sec03 .box04 .fs-12{font-size:12px ;}
+#user_history_myacount_area .sec03 .tit_name .content{display: flex;margin-left: auto;align-items: center;}
+#user_history_myacount_area .sec03 .tit_name .content span{border: 1px solid #9a9a9a;
+    border-radius: 5px;display: flex;justify-content: space-between;align-items: center;padding: 5px 10px;height: 30px;width: 170px;}
+#user_history_myacount_area .sec03 .tit_name .content span img{width: 10px;height: 10px;}
+#user_history_myacount_area .sec03 .tit_name{padding-bottom: 0px;}
+/* #user_history_myacount_area .sec02 p span{color:#47afff;background-color: white !important; padding: 0px !important;
+  border-radius: 3px;
+  margin-left: 0px;} */
+  #user_history_myacount_area .sec03 .box01,.box02,.box03{display: flex;margin-bottom: 12px;border-bottom: 1px solid #9a9a9a;padding-bottom: 12px;}
+  #user_history_myacount_area .sec03 .box04,.box05{display: flex;flex-direction: column;margin-bottom: 12px;border-bottom: 1px solid #9a9a9a;}
+  #user_history_myacount_area .sec03 .box05{border: none;}
+  #user_history_myacount_area .sec03 .box04 div,.box05 div{display: flex;}
+  #user_history_myacount_area .sec03 .box04 span,.box05 span{display: flex;justify-content: center;align-items: center;}
+  #user_history_myacount_area .sec03 .box04 span p,.box05 span p{margin-right: 10px;}
+  #user_history_myacount_area .sec03 .box04 div .content,.box05 div .content{display: flex;flex-direction: column;}
+  #user_history_myacount_area .sec03 .box01 img,.box02 img,.box03 img,.box04 img,.box05 img{width: 75px;height: 75px;margin: 12px;}
+  #user_history_myacount_area .sec03 .box01 .content,.box02 .content,.box03 .content,.box04 .content,.box05 .content{margin-left: 50px;}
+  #user_history_myacount_area .sec03 .box01 .content p,.box02 .content p,.box03 .content p,.box04 .content p,.box05 .content p{padding-bottom: 0px !important;}
+  #user_history_myacount_area .sec03 .box01 .content p:last-child,.box02 .content p:last-child,.box04 .content p:last-child,.box05 .content p:last-child{color: #FF4945;}
+  #user_history_myacount_area .sec03 .box03 .content button{display: flex;align-items: center;border: 1px solid #FF4945;border-radius:20px ;width: 160px;height: 40px;margin-left: 10px;margin-top: 10px;color: #FF4945;}
+  #user_history_myacount_area .sec03 .box03 .content button img,.box04 .content button img,.box05 .content button img{width: 20px;height: 20px;border: 1px solid #545454;border-radius: 50%;margin-left: 20px;}
+  #user_history_myacount_area .sec03 .box04 .content button,.box05 .content button{display: flex;align-items: center;border: 1px solid #FF4945;border-radius:20px ;width: 195px;height: 40px;margin-left: 10px;margin-top: 10px;color: #FF4945;}
+  #user_history_myacount_area .txt-red{color: #FF4945;}
+/* #user_history_myacount_area .sec03 .box01 img{width: 10px;height: 10px;margin-right: 12px;}
+#user_history_myacount_area .sec04 .box01{display: flex;justify-content: space-between;}
+#user_history_myacount_area .sec04 .box01 .txt-content p:nth-child(1){padding-bottom: 0px;}
+#user_history_myacount_area .sec04 .box01 .status-btn{  background-color: #9a9a9a;height: fit-content;margin: 12px;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;} */
+  /* #user_history_myacount_area .sec05 .box01 .txt-content {display: flex;flex-direction: column;}
+  #user_history_myacount_area .sec05 .box01 .txt-content span{display: flex;justify-content: space-between;}
+  #user_history_myacount_area .sec06{text-align: center;}
+  #user_history_myacount_area .sec06 .box01 p{width: 95%;background-color: #EEEE;margin: 12px;border-radius: 5px;height: 175px;color: #ff4945;text-align: start;}
+  #user_history_myacount_area .sec06 button{background-color: #FF9D45;padding:15px 100px ;border-radius:50px ;color: #ffffff;width: 400px;} */
+
+  #user_history_myacount_area .pagination {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    margin: 15px 15px 0px 0px;
+  }
+  #user_history_myacount_area .pagination span {
+    border: 1px solid rgb(235, 90, 90);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+    color: rgb(223, 28, 28);
+  }
+  #user_history_myacount_area .pagination span:hover {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    cursor: pointer;
+  }
+#user_history_myacount_area .date {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+
+#user_history_myacount_area .tit h3 {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0px 14px;
+}
+
+#user_history_myacount_area .bord-b {
+  border-bottom: 1px solid #9a9a9a;
+  margin: 0px;
+}
+#user_history_myacount_area .item-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #9a9a9a;
+}
+#user_history_myacount_area .item-display .icon_question2 h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+#user_history_myacount_area .item-display .icon_question2 p {
+  font-size: 14px;
+  padding: 5px 0px;
+  color: #545454;
+}
+
+#user_history_myacount_area .cart_privacy p {
+  font-size: 12px !important;
+}
+#footer_fix #copyright {
+  font-size: 12px;
+}
+
+#user_history_myacount_area .card_container .ignore .checkmark-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px 0px auto;
+}
+
+#user_history_myacount_area .card_container .ignore .checkmark {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#user_history_myacount_area .sec01 #breadcrumb_area {
+  padding: 12px 12px;
+}
+#user_history_myacount_area .sec01 #breadcrumb_area ul li {
+  font-size: 14px;
+}

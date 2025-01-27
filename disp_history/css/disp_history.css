@@ -1,0 +1,27 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@dis_history_myacount_area
+-----------------------------------------------------------------------------*/
+#breadcrumb_area {padding-top: 15px;}
+.sec01 {padding: 24px 15px;}
+
+.txt01{display: flex;align-items: center;justify-content: space-between;margin-bottom: 25px;}
+
+/* checkmark */
+.checkmark-container{display: flex;gap: 10px;align-items: center;cursor: pointer;margin-right: 5px;}
+.checkmark{border: 1.5px solid #707070;border-radius: 50%;width:15px ;height: 15px;display: flex;justify-content: center;}
+.checkmark span{font-size: 10px;color: #ffffff;}
+.pcard_checkmark-container{position: relative;z-index: 1000;}
+.pcard_checkmark-container .checkmark{position:absolute;border: none;background-color: #EEEEEE;top: 5px;right: 5px;}
+.sec01 .checked{background-color: #FF4549;border: none !important;}
+.ignore a{color: #545454;}
+
+/*product_list */
+#plist_area .card{border-radius: 5px;grid-template-rows: auto;}
+.reviews_box{justify-content: start !important;align-items: flex-start !important;gap: 5px;}
+.item_price{color:#ff0000;}
+
+.date{text-align: center;margin-top: 14px;}
+.myacount_list li a p{padding-left: 30px; font-size: 8px !important;}
+.myacount_list li:last-child a p{font-size: 10px !important;margin-top: 9px;}

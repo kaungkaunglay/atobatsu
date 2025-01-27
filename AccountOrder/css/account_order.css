@@ -1,0 +1,62 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@account_order_myacount_area
+-----------------------------------------------------------------------------*/
+/* common */
+#breadcrumb_area {padding-top: 15px;}
+
+.sec01 {padding: 20px 15px 0;}
+
+/* cart_list_component */
+.cart_item_list li:last-child .cart_contents {border: none;}
+.cart_item_list .cart_item_img {flex-basis: 150px;flex-shrink: 0;flex:none;}
+.cart_item_list .cart_item_img img {width: 150px;height: 150px;border: none;}
+.cart_item_list .cart_item_txt {display: flex;flex-direction: column;gap: 5px;padding: 20px 0px;width: 300px;}
+.cart_item_list .cart_item_txt p:first-child {font-weight: bold;}
+.cart_item_list .cart_contents {border-top: none;border-bottom: 1px solid #9A9A9A;display: flex;}
+
+/* pagination start */
+ul.pager{justify-content: end;}
+
+/* status_btn_component */
+.status-btn {width: max-content;height: max-content;border: none;padding: 5px;border-radius: 5px;cursor: pointer;background-color: #9a9a9a;color: #fff;font-size: 12px;}
+.status-btn.success {background-color: #C1FACF;color: #ff4549}
+.status-btn.warning {background-color: #fdf995;color: #ff4549;}
+
+/* ////////////////// section_01 ////////////////// */
+.order-card-list {display: flex;flex-direction: column;gap: 25px;}
+.order-card-list > li {border: 1px solid #9a9a9a;border-radius: 5px;overflow: hidden;}
+.order-header {background-color: #eeeeee;padding: 15px;}
+.order-header > p:first-child {font-weight: bold;font-size: 16px;}
+.order-status {display: flex;justify-content: space-between;padding: 15px;border-bottom: 1px solid #9A9A9A;}
+.order-status {width: 100%;}
+.status-content {display: flex;}
+.status-content p:first-child,.status-btn {white-space: nowrap;}
+.cart_item_list {padding: 0 15px;}
+
+.order-footer li{border-top: 1px solid #9a9a9a;}
+.order-footer li a{position: relative;font-size: 12px;line-height: 1;padding: 1.3em 30px 1.3em 15px;display: block;}
+.order-footer li a p{padding-left: 30px; font-size: 8px;}
+.order-footer li a::after {position: absolute;top: 50%;right: 14px;display: block;content: '';width: 8px;height: 8px;margin-top: -5px;border-top: 1px solid #9a9a9a;border-right: 1px solid #9a9a9a;transform: rotate(45deg) skew(6.0000rad, 6.0000rad);}
+
+.delivery-status {display: flex;flex-direction: row;flex-wrap: wrap;gap: 10px;padding: 16px;border-bottom: 1px solid #9A9A9A;}
+.delivery-btn {cursor: pointer;background-color: #eeeeee;padding: 8px 90px;color: #47afff;border-radius: 25px;margin-left: auto;font-size: 12px;}
+.order-btn {display: flex;margin-top: 12px;width: 100%;gap: 12px;}
+.order-btn button {width: 50%;padding: 7px 5px;display: flex;gap: 5px;align-items: center;border: 1px solid #ff4945;border-radius: 25px;color: #ff4945;font-size: 10px;justify-content: center;}
+.order-btn button img {width: 20px;}
+.cart_item_list .cart-btn {max-width: 120px;}
+.cart_item_list .pay-btn {max-width: 120px;}
+
+
+/* Responsive adjustments for iPhone SE */
+@media (max-width: 475px) {
+    .delivery-btn {padding: 5px 50px;} 
+    .order-btn {gap: 10px;}
+    .order-btn button img {width: 15px !important;}
+    .order-btn button{font-size: 8px !important;padding: 5px 3px;gap: 2px;}
+    .cart_item_list .cart_item_img img {width: 75px;height: 75px;}
+    .cart_item_list .cart_item_txt {padding: 10px 0px;width: 300px;margin-left: 0px;}
+}
+
+

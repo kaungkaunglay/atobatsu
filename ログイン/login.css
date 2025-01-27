@@ -1,0 +1,139 @@
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        .logo-container {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 0;
+            border-bottom: 6px solid transparent;
+            border-image: linear-gradient(white,black,white) 10 stretch;
+        }
+
+        .logo img {
+            width: 140px;
+        }
+
+        .logo span {
+            color: #ff4945;
+        }
+        .forgot-password .label{
+            color: #ff4945;
+        }
+
+        .login-container {
+            background-color: #c2fad3;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            min-height: 100vh;
+        }
+
+        .login-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #545454;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 18px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+
+        .remember-me {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .remember-me input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .forgot-password {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: #545454;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .social-login {
+            margin-top: 20px;
+        }
+
+        .social-login-title {
+            text-align: center;
+            color: #545454;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .social-button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .social-button img {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .login-container {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            .login-title {
+                font-size: 14px;
+            }
+
+            input[type="email"],
+            input[type="password"] {
+                padding: 15px;
+            }
+
+            .login-button {
+                padding: 15px;
+            }
+
+            .social-button {
+                padding: 10px;
+            }
+        }

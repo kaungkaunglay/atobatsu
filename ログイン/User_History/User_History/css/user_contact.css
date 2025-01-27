@@ -1,0 +1,134 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@account_order_myacount_area
+-----------------------------------------------------------------------------*/
+
+#user_contact_myacount_area p {
+  padding: 12px;
+  font-size: 14px;
+}
+#user_contact_myacount_area h3:nth-child(2) {
+  padding: 12px 12px 12px 12px;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+  font-size: 14px;
+}
+/* #user_contact_myacount_area .tit{display: flex;margin: 15px 14px;font-size: 14px;align-items: center;justify-content: space-between;padding: 15px 0px;} */
+/* #user_contact_myacount_area .tit p{font-size: 14px;padding: 0px;} */
+
+#user_contact_myacount_area .sec01 {
+  margin-bottom: 12px;
+}
+
+#user_contact_myacount_area .sec01 p {
+  font-size: 12px;
+}
+
+#user_contact_myacount_area .sec01 p span {
+  text-decoration: underline;
+  color: #47afff;
+}
+
+#user_contact_myacount_area .sec02,.sec04,.sec05 {
+  border-bottom: 1px solid #9a9a9a;
+}
+#user_contact_myacount_area .sec02 span,.sec03 span,.sec04 span,.sec06 span {
+  background-color: #ff4945;
+  color: #ffff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 60px;
+}
+
+#user_contact_myacount_area .sec02 .box01,.sec03 .box01 {
+  border: 1px solid #9a9a9a;
+  border-radius: 5px;
+  margin: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+#user_contact_myacount_area .sec02 p span{color:#47afff;background-color: white !important; padding: 0px !important;
+  border-radius: 3px;
+  margin-left: 0px;}
+
+#user_contact_myacount_area .sec03 .box01 img{width: 10px;height: 10px;margin-right: 12px;}
+#user_contact_myacount_area .sec04 .box01{display: flex;justify-content: space-between;}
+#user_contact_myacount_area .sec04 .box01 .txt-content p:nth-child(1){padding-bottom: 0px;}
+#user_contact_myacount_area .sec04 .box01 .status-btn{  background-color: #9a9a9a;height: fit-content;margin: 12px;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;}
+  #user_contact_myacount_area .sec05 .box01 .txt-content {display: flex;flex-direction: column;}
+  #user_contact_myacount_area .sec05 .box01 .txt-content span{display: flex;justify-content: space-between;}
+  #user_contact_myacount_area .sec06{text-align: center;}
+  #user_contact_myacount_area .sec06 .box01 p{width: 95%;background-color: #EEEE;margin: 12px;border-radius: 5px;height: 175px;color: #ff4945;text-align: start;}
+  #user_contact_myacount_area .sec06 button{background-color: #FF9D45;padding:15px 100px ;border-radius:50px ;color: #ffffff;width: 400px;}
+#user_contact_myacount_area .date {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+
+#user_contact_myacount_area .tit h3 {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0px 14px;
+}
+
+#user_contact_myacount_area .bord-b {
+  border-bottom: 1px solid #9a9a9a;
+  margin: 0px;
+}
+#user_contact_myacount_area .item-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #9a9a9a;
+}
+#user_contact_myacount_area .item-display .icon_question2 h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+#user_contact_myacount_area .item-display .icon_question2 p {
+  font-size: 14px;
+  padding: 5px 0px;
+  color: #545454;
+}
+
+#user_contact_myacount_area .cart_privacy p {
+  font-size: 12px !important;
+}
+#footer_fix #copyright {
+  font-size: 12px;
+}
+
+#user_contact_myacount_area .card_container .ignore .checkmark-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px 0px auto;
+}
+
+#user_contact_myacount_area .card_container .ignore .checkmark {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#user_contact_myacount_area .sec01 #breadcrumb_area {
+  padding: 12px 12px;
+}
+#user_contact_myacount_area .sec01 #breadcrumb_area ul li {
+  font-size: 14px;
+}

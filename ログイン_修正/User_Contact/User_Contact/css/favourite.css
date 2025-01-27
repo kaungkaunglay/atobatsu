@@ -1,0 +1,70 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@myacount_area
+-----------------------------------------------------------------------------*/
+
+
+#myacount_area p{padding: 14px;font-size: 14px;}
+#myacount_area h1:nth-child(2){padding:0px 14px 14px 14px;font-weight: bold;border-bottom: 2px solid red;font-size: 14px;}
+#myacount_area .tit{display: flex;margin: 15px 14px;font-size: 14px;align-items: center;justify-content: space-between;padding: 15px 0px;}
+#myacount_area .tit p{font-size: 14px;padding: 0px;}
+#myacount_area .swiper-slide{border: 1px solid gray;width: 350px !important;}
+#myacount_area .swiper-slide .price_aria{padding: 0px 10px;}
+
+#myacount_area .card_container {
+ 
+    grid-template-columns: auto auto;
+ 
+}
+#myacount_area .card_container li a{
+    border: 1px solid gray;padding:10px 0px;
+    border-radius: 5px;
+}
+#myacount_area .card_container .ignore .price_aria .item_price{color:red;font-size: 14px !important;}
+
+#myacount_area .card_container .ignore .icon_star {
+    padding-left: 15px;
+}
+#myacount_area .card_container .ignore .item_name{font-size: 14px !important;}
+#myacount_area .pagination{display: flex; gap: 5px;justify-content: center;margin: 15px 0px 0px 0px;}
+#myacount_area .pagination span{border: 1px solid rgb(235, 90, 90);width: 35px;height: 35px;border-radius: 50%;display: flex;justify-content: center;align-items: center;line-height: 35px;color: rgb(223, 28, 28);}
+#myacount_area .pagination span:hover{background-color: rgb(255, 0, 0);color: white;cursor: pointer;}
+#myacount_area .date{text-align: center;font-size: 14px;color: gray;}
+
+#myacount_area .tit{
+    padding: 20px 15px;  display: flex; align-items: baseline;
+    margin: 15px 0px;
+}
+#myacount_area .tit h1{font-weight: bold;font-size: 14px;}
+
+#myacount_area .bord-b{border-bottom: 1px solid #9a9a9a;}
+#myacount_area .item-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #9a9a9a;
+}
+#myacount_area .item-display .icon_question2 h3{font-size: 14px;font-weight:500;}
+#myacount_area .item-display .icon_question2 p{font-size: 12px;padding:5px 0px;color: #545454;}
+
+#myacount_area .cart_privacy p{font-size: 12px !important;}
+#footer_fix #copyright{font-size: 12px;}
+
+#myacount_area .card_container .ignore .checkmark-container {
+    width: 25px; 
+    height: 25px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px auto;
+}
+
+#myacount_area .card_container .ignore .checkmark {
+    font-size: 15px; 
+    color: #ffffff;
+}

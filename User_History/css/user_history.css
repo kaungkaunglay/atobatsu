@@ -1,0 +1,48 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@user_history_myacount_area
+-----------------------------------------------------------------------------*/
+
+/* breadcrumb_area style start */
+#breadcrumb_area {padding-top: 15px;}
+
+/* cart_list_component */
+.cart_item_list li {border-bottom: 1px solid #9a9a9a;padding: 0 15px;}
+.cart_item_list .cart_item_img img {width: 75px;height: auto;border: none;}
+.cart_item_list .cart_item_img {flex-basis: 100px;}
+.cart_item_list .cart_item_txt {flex-basis: 100%;flex-shrink: 1;}
+.cart_item_list .cart_item_txt p:first-child {font-weight: bold;}
+.cart_item_list .cart_contents {border: none;}
+
+ul.pager {display: flex;justify-content: end;}
+
+.sec01,.sec02 {padding: 15px;}
+
+/* ////////////////// section_01 ////////////////// */
+.sec01 {padding-bottom: 0;}
+.txt_link{text-decoration: underline;cursor: pointer;}
+
+/* ////////////////// section_02 ////////////////// */
+.sec02 {border-bottom: 1px solid #9A9A9A;}
+.sp-addr-input-wrap input[type="text"] {width: 100%;}
+.v3_detailSearch .search_list2 {display: flex;justify-content: end;border: none;padding-bottom: 0;}
+.search_list2 input{cursor: pointer;}
+
+/* ////////////////// section_03 ////////////////// */
+.myacount_area h2.top-bar {display: flex;align-items: center;}
+.myacount_area h2.top-bar > div {margin-left: auto;display: inherit;align-items: inherit;gap: 7px;font-weight: normal;}
+.pulldown label select {padding: 10px 10px;height: max-content;border-radius: 10px;}
+.order-btn button {width: 80%;padding: 5px;display: flex;gap: 5px;align-items: center;border: 1px solid #ff4945;border-radius: 25px;color: #ff4945;font-size: 12px;justify-content: center;cursor: pointer;}
+.order-btn button img {width: 20px;}
+
+/* ////////////////// more-btn action ////////////////// */
+.more-btn {display: flex;justify-content: center;cursor: pointer;height: max-content;}
+.more-btn span {display: block;height: max-content;position: relative;display: flex;width: 10px;margin-left: 10px;}
+.more-btn span::after,.more-btn span::before {content: '';display: block;position: absolute;width: 100%;height: 1px;bottom: -8px;border: 1px solid red;}
+.more-btn span::after {transform: translateX(-2.5px) rotateZ(60deg);}
+.more-btn span::before {transform: translateX(2.5px) rotateZ(-60deg);}
+.more-btn.active span {rotate: z -180deg;}
+.more-btn.active span::after,.more-btn.active span::before {bottom: 8px;}
+.more-content {height: 40px;overflow: hidden;}
+.more-content.active {height: max-content;}

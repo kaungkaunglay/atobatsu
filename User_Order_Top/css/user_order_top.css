@@ -1,0 +1,79 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@user_order_top_myacount_area
+-----------------------------------------------------------------------------*/
+
+/* common */
+#breadcrumb_area {padding-top: 15px;}
+.sec-full, .sec {border-bottom: 1px solid #9A9A9A;}
+.sec {padding: 15px;}
+.txt_link{text-decoration: underline !important;}
+
+/* cart_list_component */
+.cart_item_list li:last-child .cart_contents {border: none;}
+.cart_item_list .cart_item_img img {width: 75px;height: auto;border: none;}
+.cart_item_list .cart_item_img {flex-basis: 100px;}
+.cart_item_list .cart_item_txt {flex-basis: 100%;flex-shrink: 1;}
+.cart_item_list .cart_item_txt p:first-child {font-weight: bold;}
+.cart_item_list .cart_contents {border-top: none;border-bottom: 1px solid #9A9A9A;}
+
+/* status_btn_component */
+.status-btn {width: max-content;height: max-content;padding: 5px;border: none;background-color: #9a9a9a;color: #fff;font-size: 12px;cursor: pointer;border-radius: 5px;}
+.status-btn.success {background-color: #C1FACF;color: #ff4549;}
+.status-btn.warning {background-color: hsl(58, 96%, 79%);color: #ff4549;}
+
+/* .common_table_components */
+.cmn-table {width: 100%;margin: 0 auto;text-align: left;border-collapse: collapse;}
+.cmn-table tr {border-bottom: 1px solid #9a9a9a;}
+.cmn-table tr:last-child {border-bottom: none;}
+.cmn-table td {width: 75%;padding: 12px 10px;}
+.cmn-table td:first-child {width: 25%;background-color: #f4f4f4;}
+.cmn-table td > div {display: flex;flex-direction: column;gap: 9px;}
+.cmn-table td > span {display: flex;flex-wrap: wrap;flex-direction: row;}
+
+/* order_status_components */
+.order-status {display: flex;margin-top: 10px;}
+.order-detail {display: flex;flex-direction: column;gap: 7px;}
+.status-btn {margin-left: auto;}
+
+/* ////////////////// user_order_top ////////////////// */
+.user_order_top .optional-mark{margin-bottom: 0;margin-left: auto;padding: 8px 13px;font-size: inherit;cursor: pointer;}
+
+/* ////////////////// section_02 ////////////////// */
+.sec02 {padding-top: 0;padding-bottom: 0;}
+
+/* ////////////////// section_04 ////////////////// */
+.btn_blue_line {display: flex;width: 100%;margin-top: 15px;color: #47AFFF;gap: 10px;}
+.btn_blue_line button {width: 50%;border: 1px solid #47AFFF;color: #47AFFF;cursor: pointer;border-radius: 40px;font-size: 12px;padding:7px 5px;}
+ 
+/* ////////////////// section_05 ////////////////// */
+.sec05 {border-bottom: none;}
+.sec05 .cmn-table {border: 1px solid #9a9a9a;border-right: none;border-left: none;}
+.btn_wpr {width: 70%;margin-left: auto;padding: 20px 15px 0;}
+.payment-table .status-btn {margin: 0;}
+.payment_content li {padding: 9px 0;border-bottom: 1px solid #eee;}
+.payment_content li:has(h3) {padding: 0;}
+.payment_content li:nth-child(1) p {color: #9A9A9A;}
+.payment_content li:last-child {padding-bottom: 0;border-bottom: none;}
+
+/* ////////////////// section_06 ////////////////// */
+.accordion label {position: relative;}
+.accordion input[type="text"] {padding-right: 31px;}
+.cross-icon {position: absolute;top: 50%;right: 15px;color: #707070;cursor: pointer;}
+.cross-icon::before,.cross-icon::after {position: absolute;right: 0;bottom: 0;width: 8px;content: '';border-bottom: 1px solid #707070;}
+.cross-icon::before {transform: rotateZ(45deg);}
+.cross-icon::after {transform: rotateZ(-45deg);}
+.btn-check {width: 90%;}
+.btn-check button {width: 100%;padding: 6px 0;background-color: #EEEEEE;color: #47AFFF;cursor: pointer;border-radius: 100px;}
+
+/* ////////////////// section_08 ////////////////// */
+.sec08 {border-bottom: none;}
+
+@media  screen and (max-width: 390px) {
+  .btn_blue_line {gap: 4px;}
+  .btn_normal_red {font-size: 12px;}
+}
+
+
+

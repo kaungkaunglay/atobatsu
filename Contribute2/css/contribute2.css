@@ -1,0 +1,35 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@contribute2
+-----------------------------------------------------------------------------*/
+nav#breadcrumb_area {padding-top: 15px;}
+.sec01 {padding: 15px;}
+img {width: 100%;vertical-align: bottom;}
+#contents {padding-bottom: .5px;}
+
+/* ////////////////// section_01 ////////////////// */
+.para{padding: 25px;}
+.box01 .para {padding-bottom: 0; text-align: center;}
+.bg-img {width: 42%;margin: 0 auto;max-width: 306px;margin-top: 14px;}
+.yellow_box {padding: 25px 15px !important;}
+.box01 {padding: 0 15px;display: flex;flex-direction: column;gap: 15px;}
+.btn_normal_red,.btn_line_red{margin: 0px !important;}
+
+/* Responsive adjustments for iPhone SE */
+@media (max-width: 375px) {
+    .breadcrumb_list{height: 35px !important;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

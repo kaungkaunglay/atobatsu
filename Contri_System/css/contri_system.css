@@ -1,0 +1,35 @@
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@account_order_myacount_area
+-----------------------------------------------------------------------------*/
+/* common */
+#breadcrumb_area {padding-top: 15px;}
+
+.sec01,.sec02,.sec03 {padding: 0 15px;}
+.yellow_box p{font-size: 12px;}
+
+/* square_bullet */
+.square_bullet {font-weight: bold;color: #ff4549;padding: 15px !important;margin-top: 20px;display: flex;flex-direction: column;}
+.square_bullet li{display: flex;position: relative;align-items: start;}
+.square_bullet li::before {content: '■';font-size: 25px;margin-right: 5px;position: absolute;color: #ff4549;top: -15px;}
+.square_bullet p {margin-left: 20px;}
+
+/* ////////////////// section_common ////////////////// */
+.sec02 .myacount_area h2,.sec03 .myacount_area h2{padding-left: 0px;border-bottom: 2px solid #ff4549;color: #ff4549;}
+.simple_list li {font-size: 10px;}
+
+/* ////////////////// section_01 ////////////////// */
+.sec01 {padding-top: 15px;}
+.content_box {border: 1px solid #C1FACF;border-radius: 5px 5px 0px 0px;margin-top: 25px}
+.content_box h3 {background-color: #C1FACF;color: #ff4549;font-weight: bold;padding: 7px 15px;}
+.content_box p {padding: 15px;}
+
+/* ////////////////// section_03 ////////////////// */
+.sec03 > p {margin-top: 15px}
+a .btn_normal_red {margin-top: 22px;}
+
+/* Responsive adjustments for iPhone SE */
+@media (max-width: 375px) {
+    .breadcrumb_list{height: 35px !important;}
+}

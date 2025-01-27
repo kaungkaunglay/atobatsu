@@ -1,0 +1,230 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@user_order_top_myacount_area
+-----------------------------------------------------------------------------*/
+
+#user_order_top_myacount_area p {
+  padding: 14px;
+  font-size: 14px;
+}
+
+#user_order_top_myacount_area h1:nth-child(2) {
+  padding: 0px 14px 14px 14px;
+  font-weight: bold;
+  border-bottom: 2px solid #FF4549;
+  font-size: 14px;
+}
+
+#user_order_top_myacount_area .sec01 h3:first-of-type {
+  padding: 12px 12px 12px 12px;
+  border-bottom: 2px solid #FF4549;
+  font-size: 14px;
+}
+
+#user_order_top_myacount_area .sec01 {
+  margin-bottom: 12px;
+}
+
+#user_order_top_myacount_area .sec02 .box01,
+.box02,
+.box03 {
+  padding: 12px;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card{
+  /* border: 1px solid #b8b5b5; */
+  /* border-radius: 5px; */
+  overflow: hidden;
+  margin: auto;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .order-header,
+.box02 .order-card .order-header,
+.box03 .order-card .order-header {
+  background-color: #eeeeee;
+  padding: 1px;
+  /* border-bottom: 1px solid #e0e0e0; */
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .order-header p:nth-child(1),
+.box02 .order-card .order-header p:nth-child(1),
+.box03 .order-card .order-header p:nth-child(1) {
+  margin: 0;
+  padding-bottom: 0px !important;
+  font-size: 19px !important;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .order-header p:nth-child(2),
+.box02 .order-card .order-header p:nth-child(2),
+.box03 .order-card .order-header p:nth-child(2) {
+  color: #666;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .order-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-bottom: 1px solid #bdb8b8;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .order-status span,
+.box02 .order-card .order-status span,
+.box03 .order-card .order-status span {
+  font-size: 14px;
+  color: #666;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .order-status .status-btn,
+.box02 .order-card .order-status .status-btn,
+.box03 .order-card .order-status .status-btn {
+  background-color: #9a9a9a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .cart_contents,
+.box02 .order-card .cart_contents,
+.box03 .order-card .cart_contents {
+  border: none;
+  display: flex;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .cart_contents .cart_item_img,
+.box02 .order-card .cart_contents .cart_item_img,
+.box03 .order-card .cart_contents .cart_item_img {
+  flex: none;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .cart_contents .cart_item_img img,
+.box02 .order-card .cart_contents .cart_item_img img,
+.box03 .order-card .cart_contents .cart_item_img img {
+  border: none;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .cart_contents .cart_item_txt p,
+.box02 .order-card .cart_contents .cart_item_txt p,
+.box03 .order-card .cart_contents .cart_item_txt p {
+  padding-bottom: 0px !important;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card ul li,
+.box02 .order-card ul li,
+.box03 .order-card ul li {
+  border-bottom: 1px solid rgb(209, 195, 195);
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .footer,
+.box02 .order-card .footer,
+.box03 .order-card .footer {
+  /* padding: 12px; */
+  /* border-top: 1px solid #e0e0e0; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .footer a,
+.box02 .order-card .footer a,
+.box03 .order-card .footer a {
+  text-decoration: none;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .footer a:nth-child(1),
+.box02 .order-card .footer a:nth-child(1),
+.box03 .order-card .footer a:nth-child(1) {
+  border-bottom: 1px solid rgb(209, 195, 195);
+}
+#user_order_top_myacount_area h3:nth-child(2){
+  padding:12px 12px 12px 12px;
+  border-bottom: 1px solid #9A9A9A;
+  font-size: 14px;
+}
+
+#user_order_top_myacount_area .sec03 .box01 {
+  padding: 12px;
+}
+
+#user_order_top_myacount_area .tit {
+  display: flex;
+  margin: 15px 14px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+#user_order_top_myacount_area .tit p {
+  font-size: 14px;
+  padding: 0px;
+}
+
+#user_order_top_myacount_area .list-display {
+  margin-top: -40px;
+}
+
+#user_order_top_myacount_area .tit {
+  padding: 20px 15px;
+  display: flex;
+  align-items: baseline;
+  margin: 15px 0px;
+}
+
+#user_order_top_myacount_area .tit h1 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#user_order_top_myacount_area .bord-b {
+  border-bottom: 1px solid #9a9a9a;
+}
+
+#user_order_top_myacount_area .item-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #9a9a9a;
+}
+
+#user_order_top_myacount_area .item-display .icon_question2 h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#user_order_top_myacount_area .item-display .icon_question2 p {
+  font-size: 12px;
+  padding: 5px 0px;
+  color: #545454;
+}
+
+#user_order_top_myacount_area .cart_privacy p {
+  font-size: 12px !important;
+}
+
+#footer_fix #copyright {
+  font-size: 12px;
+}
+
+#user_order_top_myacount_area .sec01 #breadcrumb_area {
+  padding: 15px 15px;
+}
+
+#user_order_top_myacount_area .sec01 #breadcrumb_area ul li {
+  font-size: 10px;
+}
+
+#user_order_top_myacount_area .sec02 .box01 .order-card .order-status .order-detail p {
+  padding: 6px;
+}

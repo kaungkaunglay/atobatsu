@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="googlebot" content="INDEX,FOLLOW">
+    <meta name="Keywords" content="アダルトグッズ,大人のおもちゃ,女性,通販,CIAOMO">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-180x180.png" sizes="180x180">
+    <title>新規会員登録 | CIAOMO</title>
+    <link href="css/base_all.css" rel="stylesheet" type="text/css">
+    <link href="css/user_regist.css" rel="stylesheet" type="text/css"><!--新しく作成したcssはここに記述-->
+    <link rel="shortcut icon" href="images/common/favicon.ico">
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+</head>
+
+
+<body cz-shortcut-listen="true">
+
+
+    <!-- header -->
+    <header id="header_fix">
+        <div class="wrap header_container flex_j_center">
+            <div>
+                <h1 class="header-logo m"><a href="/"><img src="images/common/header/logo_ciaomo.gif" alt="CIAOMO"></a>
+                </h1>
+            </div>
+        </div>
+    </header>
+    <!-- //header -->
+
+
+    <!-- contents -->
+    <div id="contents">
+
+        <!-- main -->
+        <main id="main_area">
+
+            <!-- myacount_area -->
+            <article id="myacount_area"><!--ここにページidを入れて、独自のcssに利用する-->
+                <div class="tit_name">
+                    <h1>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">新規会員登録,</font>
+                        </font>
+                    </h1>
+                </div>
+                <div class="wrap">
+                    <div class="register_section p-t15">
+                        <h3 class="p-t10 p-l10">メールアドレスとパスワードをご入力ください。</h3>
+                        <div class="register_area m-l25 m-t20">
+                            <div class="register">
+                                <div class="login_input_area">
+                                    <div class="input_name">
+                                        <label>
+                                            メールアドレス<span class="required_red">必須</span>
+                                        </label>
+                                        <span class="m-r5">
+                                            <input style="ime-mode: active;" id="login_mailaddress"
+                                                placeholder="メールアドレス" class="inputCommon type_login" type="text"
+                                                name="loginInput" size="50" value="">
+                                        </span>
+                                    </div>
+                                    <div class="input_name">
+                                        <label><span>メールアドレス(確認用)</span><span class="required_red">必須</span></label>
+                                        <input id="login_mailaddress" placeholder="メールアドレス"
+                                            class="inputCommon type_login" type="text" name="loginInput" size="50"
+                                            value="">
+                                    </div>
+                                    <div class="mail_address">
+                                        <label><span>パスワード</span><span class="required_red">必須</span><span
+                                                class="red m-l10">英数字7～16文字</span></label>
+                                        <input id="login_mailaddress" placeholder="メールアドレス"
+                                            class="inputCommon type_login" type="text" name="loginInput" size="50"
+                                            value="">
+                                    </div>
+                                    <div class="section">
+                                        <div class="tit_name_sub4 disp_delivtype15 m-t20">
+                                            <h3 class="sub-title">ポイントやお得情報やランキングなど、CIAOMODからお知らせをメールでお届けしますか?</h3>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input type="radio" id="option1" name="customRadio" checked>
+                                            <label class="radio-label" for="option1">受け取る</label>
+                                        </div>
+
+                                        <div class="radio-container">
+                                            <input type="radio" id="option2" name="customRadio">
+                                            <label class="radio-label" for="option2">受け取らない</label>
+                                        </div>
+                                    </div>
+                                    <div class="section m-t40">
+                                        <div class="tit_name_sub4 disp_delivtype15 m-t20">
+                                            <h3 class="sub-title">CIAOMODのメールマガジンをお受け取りますか?</h3>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input type="radio" id="option3" name="customRadio2" checked>
+                                            <label class="radio-label" for="option3">受け取る</label>
+                                        </div>
+
+                                        <div class="radio-container">
+                                            <input type="radio" id="option4" name="customRadio2">
+                                            <label class="radio-label" for="option4">受け取らない</label>
+                                        </div>
+                                    </div>
+                                    <p class="regist_txt m-t25"><a href=""><span>利用規約</span>に同意してアカウントを作成する。</a></p>
+                                    <div class="btn_bg_white_98_60 m-b30">
+                                        <a href="#" target="_blank">
+                                            <div class="btn_normal_red">新規会員としてレジへ進む</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register_content">
+                        <div class="register_user">
+                            <div class="register_other">
+                                <h3>他のサービスでログイン</h3>
+                                <p>閲覧履歴・購入履歴などはタイムラインに反映されませんので、ご安心ください。</p>
+                                <div class="btn_bg_white_100_60"><a href="" target="_blank">
+                                        <div class="btn_google">Googleアカウントでログイン</div>
+                                    </a></div>
+                                <div class="btn_bg_white_100_60"><a href="" target="_blank">
+                                        <div class="btn_x">Xアカウントでログイン</div>
+                                    </a></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="cart_guest">
+                        <h3>はじめてご利用の方</h3>
+                        <p>新規会員登録を行うとポイントを貯めたり、次回購入のお客様情報入力が簡素化、お気に入りの情報を残しておけるなど、さまざまな特典を受けられます。</p>
+                        <div class="btn_bg_white_100_60"><a href="" target="_blank">
+                                <div class="btn_line_red">新規会員登録はこちら</div>
+                            </a></div>
+                    </div>
+
+                    <div class="cart_privacy">
+                        <div><a href="" target="_blank"><img src="images/common/footer/degi_smart.png" alt=""></a></div>
+                        <p>当店はお客様の個人情報をSSL暗号化し、安全な通信を提供しています。</p>
+                    </div>
+                </div>
+
+            </article>
+            <!-- //myacount_area -->
+
+        </main>
+        <!-- //main -->
+
+    </div>
+    <!-- contents -->
+
+
+    <!-- footer -->
+    <footer id="footer_fix">
+        <div class="wrap">
+
+            <ul>
+                <li><a href="" target="_self">プライバシーポリシー</a></li>
+                <li><a href="" target="_self">利用規約</a></li>
+                <li><a href="" target="_self">特定商取引法による表記</a></li>
+                <li><a href="" target="_self">会社概要</a></li>
+                <li><a href="" target="_self">お問い合わせ</a></li>
+            </ul>
+
+            <p class="center">《無店舗風俗特殊営業届出済 - 受理番号22》</p>
+
+            <!-- copyright -->
+            <div id="copyright" class="left">
+                Copyright (C) <!-- 2024- -->
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script> 女性のためのアダルトグッズ通販ショップ CIAOMO　All Rights Reserved.
+            </div>
+            <!-- //copyright -->
+
+
+        </div>
+
+    </footer>
+    <!-- //footer -->
+
+</body>
+
+</html>

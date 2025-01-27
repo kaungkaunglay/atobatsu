@@ -1,0 +1,201 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+/*-----------------------------------------------------------------------------
+�@myacount_area
+-----------------------------------------------------------------------------*/
+
+
+#myacount_area .register_content{margin-top: 95px;}
+#myacount_area .cart_guest, #myacount_area .footer{margin: 30px 15px;}
+#myacount_area .register_user .register_other{margin-bottom: 0; border-bottom: none;}
+.font-normal{font-size: 12px; line-height: 1; margin-bottom: 20px;}
+#myacount_area .new_register_content .login_input_area{margin-bottom: 30px;}
+#myacount_area .new_register_content .register_other h2{font-size: 14px; text-align: center; margin-bottom: 20px;}
+#myacount_area .new_register_content h2 {
+    font-size: 12px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+#myacount_area .new_register_content p.headsup_list{margin-bottom: 20px;}
+#myacount_area .card{border:3px solid black;color:black;border-radius:10px;margin: 20px 40px;display: flex;flex-direction:column;justify-content: center;padding: 15px 15px;}
+#myacount_area .card h1{font-size: 15px;text-align: center;
+}
+/* #myacount_area .one{display: flex;justify-content: center;align-items: center;border-bottom: 2px solid black;width: fit-content;margin: -5px auto 0px auto;}
+#myacount_area .one img{width: 30px;height:30px;border: 1px solid black;border-radius: 50%;}
+#myacount_area .one img,#myacount_area .one h1,#myacount_area .one h2{padding: 5px ;}
+#myacount_area .one h1{font-size:25px ;} */
+
+/* #myacount_area .two{display: flex;justify-content: center;align-items: center;}
+#myacount_area .two img{width: 25px;height:25px;border: 1px solid black;border-radius: 50%;}
+#myacount_area .two img,#myacount_area .two h1{margin-right:10px ;}
+#myacount_area .two h1{font-size:15px ;} */
+
+#myacount_area .content3{display: flex;justify-content: center;align-items: center;height: 50px;}
+#myacount_area .content3 p:nth-child(1){font-size: 50px;margin-right: 10px;font-weight: bold;}
+#myacount_area .content3 p:nth-child(2){margin-top: 20px;}
+
+
+#myacount_area .four{display: flex;justify-content: center;align-items: center;margin-top: 5px;gap: 15px;}
+#myacount_area .content4{display: flex; justify-content: center; gap: 15px;margin-top: 5px;}
+
+#myacount_area .content5{background-color: black;color: rgb(201, 19, 19);padding: 5px;
+    background-color: black;
+    position: relative;
+    width: 423px;
+    margin-left: -24px;
+    margin-top: 10px;
+    }
+    #myacount_area .content5 p{font-size: 13px;letter-spacing: 1px;text-align: center;color: #eee;}
+#myacount_area .content5 span{font-size: 20px;}
+#myacount_area .content6{display: flex;margin-top: 15px;align-items: center;gap: 40px;}
+#myacount_area .content6 h1{width: 150px;}
+#myacount_area .content6 .mr-10{margin-right: 15px;}
+/* #myacount_area .content5 .mg-right{padding-right: 2px;} */
+#myacount_area .content6 .end{background-color:#c2fad3;color:#ff4945;padding: 6px;border-radius: 5px;width: 110px;}
+
+#myacount_area .item_list{display: flex;padding: 15px;justify-content: end;font-size: 10px;}
+
+#myacount_area .swiper-slider5-container{overflow: hidden;width: 100%;}
+
+#myacount_area .swiper-slide .price_aria{display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px 0px 10px;}
+
+
+#myacount_area .sec01_box01{
+    border:4px solid #000000;
+    margin:15px auto;
+    border-radius:10px;
+    width: 26rem;
+    padding: 1rem !important;
+    
+}
+#myacount_area .sec01_box01 p{text-align: center;font-size: 12px;}
+#myacount_area .sec01_box01 .content1{display: flex;justify-content: center;align-items:center;gap:5px; margin: 10px ;}
+#myacount_area .sec01_box01 .content1 img{width: 25px;height: 25px;border-radius: 50%;background-color: aliceblue;}
+#myacount_area .sec01_box01 .content2{display: flex;justify-content: center;align-items:center;gap:5px; margin-top: 10px ;}
+#myacount_area .sec01_box01 .content2 img{width: 20px;height: 20px;border-radius: 50%;background-color: aliceblue;}
+#myacount_area .sec01_box01 .line_red{border-top: 2px solid #0a0a0a;width: 200px;margin: auto}
+#myacount_area .sec01_box01 .content1 .user_point{color: #000000;font-size: 20px; line-height: 1; font-weight: bold;margin: 0px 5px;}
+
+#myacount_area .tit{
+    padding: 20px 15px;  display: flex; align-items: baseline;
+}
+#myacount_area .tit h1{font-weight: bold;font-size: 14px;}
+
+#myacount_area .bord-b{border-bottom: 1px solid #9a9a9a;}
+#myacount_area .redline{
+    border-bottom: 2px solid #ff0606;
+}
+#myacount_area .sec03 .bord-b,#myacount_area .sec05 .bord-b{border-bottom: 1px solid #9a9a9a;}
+#myacount_area .sec04 .tit_name{border: none;}
+
+#myacount_area .sec02{width: 100%; padding: 0 15px; margin: 20px auto 0; line-height: 2;}
+#myacount_area .item-display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #9a9a9a;
+    
+}
+#myacount_area .item-display .icon_question2 h3{font-size: 14px;}
+#myacount_area .item-display .icon_question2 p{font-size: 12px;color: #545454;}
+#myacount_area .item_list a{font-size: 12px;}
+#myacount_area .sec01_box02{
+    margin: 10px 0;
+    padding: 25px 60px;
+    background-color: #ededed;
+}
+#myacount_area .sec01_box02 p{font-size: 12px;}
+#myacount_area .price-fix-text-1,.price-fix-text-2{display: flex; gap: 10px;justify-content: space-between;align-items: center;}
+#myacount_area .price-fix-text-2 p:nth-child(2){margin-left: 155px;}
+#myacount_area .price-fix-number {
+    color: #ff4945;
+    font-size: 20px;
+}
+#myacount_area .list-display{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    
+}
+#myacount_area .list-display p{
+    font-size: 12px;
+    margin: 0px;
+    
+}
+
+#myacount_area .list-item{
+    display: flex;
+    padding: 15px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #9a9a9a;
+}
+#myacount_area .list-item:last-child{
+    border: none;
+}
+#myacount_area .tit_name{
+    border-color: red;
+    padding: 15px;
+    margin-top: 20px;
+    /* border: none; */
+}
+#myacount_area .tit_name h2{font-weight: bold;}
+
+#myacount_area .list-head h2, .list-item h2:nth-of-type(2){
+    font-weight: bold;
+}
+#myacount_area .list-head{
+    border-top: 1px solid #eee;
+    display: flex;
+    padding: 10px 15px 10px 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+#myacount_area .ac1 dt h3{
+    color: #545454;
+    font-size: 15px;
+    font-weight: bold;
+}
+#myacount_area .ac1 h2{font-weight: bold;}
+#myacount_area .list-title{
+    padding: 15px;
+    border-bottom: 1px solid #9a9a9a;
+}
+#myacount_area .ac1 dt{
+    border-color: #eee transparent #9a9a9a transparent;
+}
+#myacount_area .ac1 dt:before, .ac1 dt:after{
+    background: #181616;
+    margin: 0 15px;
+}
+#myacount_area .ac1 dd{
+    padding: 0;
+}
+#myacount_area .btn_normal_red{
+    padding: 0px;
+  
+    height: 50px;
+    float: right;
+    width: 40%;
+}
+
+#myacount_area .p-15{padding: 0px 15px;}
+
+#myacount_area .ac1 dt h1{font-size: 14px;font-weight: bold;}
+
+#myacount_area .footer img{width: 86px; height: 35px; margin: 0 auto;}
+#myacount_area .footer p{font-size: 12px !important; margin-top: 10px; text-align: center; padding: 0 15px 25px;}
+#footer_fix #copyright{font-size: 12px;}
+#myacount_area .ac1 .container{margin-right: 40px;}
+#myacount_area .ac1 .btn_red input{width: 30%;padding: 0px;float:right;height: fit-content;}
+
+
+
+
